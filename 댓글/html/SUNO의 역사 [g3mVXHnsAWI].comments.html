@@ -1,0 +1,362 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>SUNO의 역사 - 댓글</title>
+<style>
+  :root {
+    --bg: #ffffff;
+    --fg: #0f0f0f;
+    --secondary: #606060;
+    --border: #e5e5e5;
+    --hover: #f2f2f2;
+    --pinned-bg: #fafafa;
+    --avatar-bg: #ccc;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0f0f0f;
+      --fg: #f1f1f1;
+      --secondary: #aaaaaa;
+      --border: #2f2f2f;
+      --hover: #1f1f1f;
+      --pinned-bg: #1a1a1a;
+      --avatar-bg: #444;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    font-family: "Roboto", "Noto Sans KR", Arial, sans-serif;
+    background: var(--bg);
+    color: var(--fg);
+    margin: 0;
+    padding: 1.5rem;
+  }
+  .page {
+    max-width: 760px;
+    margin: 0 auto;
+  }
+  h1 {
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin: 0 0 0.25rem;
+  }
+  .count {
+    color: var(--secondary);
+    font-size: 0.9rem;
+    margin: 0 0 1.25rem;
+  }
+  .comment-thread {
+    margin-bottom: 1.1rem;
+  }
+  .comment {
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+  }
+  .comment.is-pinned {
+    background: var(--pinned-bg);
+    border-radius: 12px;
+    padding: 8px;
+    margin: -8px -8px 0 -8px;
+  }
+  .avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    object-fit: cover;
+    background: var(--avatar-bg);
+  }
+  .avatar-placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1rem;
+  }
+  .comment-body {
+    flex: 1;
+    min-width: 0;
+  }
+  .header {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 6px;
+    font-size: 0.8125rem;
+    line-height: 1.4rem;
+  }
+  .author {
+    font-weight: 500;
+    color: var(--fg);
+    text-decoration: none;
+  }
+  .author:hover {
+    text-decoration: underline;
+  }
+  .pinned {
+    color: var(--secondary);
+    font-size: 0.75rem;
+    font-weight: 500;
+  }
+  .text {
+    font-size: 0.875rem;
+    line-height: 1.4rem;
+    white-space: pre-wrap;
+    word-break: break-word;
+    margin-top: 2px;
+  }
+  .actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 6px;
+    min-height: 1px;
+  }
+  .like {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--secondary);
+    font-size: 0.8125rem;
+  }
+  .like svg {
+    width: 16px;
+    height: 16px;
+    fill: var(--secondary);
+  }
+  .heart {
+    font-size: 0.9rem;
+  }
+  .yt-emoji {
+    display: inline-block;
+    background: var(--hover);
+    color: var(--secondary);
+    font-size: 0.7rem;
+    font-weight: 600;
+    line-height: 1;
+    padding: 2px 5px;
+    border-radius: 4px;
+    vertical-align: middle;
+    letter-spacing: 0;
+  }
+  .reply-list {
+    margin-left: 52px;
+    margin-top: 8px;
+  }
+  .comment-thread.is-reply .avatar,
+  .comment-thread.is-reply .avatar-placeholder {
+    width: 24px;
+    height: 24px;
+    font-size: 0.75rem;
+  }
+  .comment-thread.is-reply .reply-list {
+    margin-left: 36px;
+  }
+</style>
+</head>
+<body>
+<div class="page">
+  <h1>SUNO의 역사</h1>
+  <p class="count">댓글 12개</p>
+<div class="comment-thread">
+  <div class="comment">
+    <img class="avatar" src="https://yt3.ggpht.com/xSKDYhGtIs7sNjk6LbKOihy5_EXgna2FpwlI6V-OR2msR-lP2R7ik4vbSm0fOVzoA6xFrD-4hA=s88-c-k-c0x00ffffff-no-rj" alt="" loading="lazy">
+    <div class="comment-body">
+      <div class="header">
+        <a class="author" href="https://www.youtube.com/@%ED%83%95%EC%9D%B4tangee" target="_blank" rel="noopener">@탕이tangee</a>
+        
+      </div>
+      <div class="text">버전 탓하면 안되겠네....</div>
+      <div class="actions">
+        <span class="like"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2.18l-.01-.01.01-.01z"/></svg>1</span>
+        <span class="heart" title="크리에이터가 좋아함">❤️</span>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="comment-thread">
+  <div class="comment">
+    <img class="avatar" src="https://yt3.ggpht.com/ytc/AIdro_mHLn4wbyjiYqzKtAQV7B412O67xb1yNTdbyHKOks8=s88-c-k-c0x00ffffff-no-rj" alt="" loading="lazy">
+    <div class="comment-body">
+      <div class="header">
+        <a class="author" href="https://www.youtube.com/@blacksmith4980" target="_blank" rel="noopener">@blacksmith4980</a>
+        
+      </div>
+      <div class="text">크아악 SUNO ver10597 만 나왔더라면</div>
+      <div class="actions">
+        <span class="like"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2.18l-.01-.01.01-.01z"/></svg>1</span>
+        <span class="heart" title="크리에이터가 좋아함">❤️</span>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="comment-thread">
+  <div class="comment">
+    <img class="avatar" src="https://yt3.ggpht.com/0bG-xbkDRfQ6Z5uiNtgCEgTQ9kCHGX8y9Qu-DWcLnskIMpNgFQ3mM1HRgYb5RlZZJ-E88pTadA=s88-c-k-c0x00ffffff-no-rj" alt="" loading="lazy">
+    <div class="comment-body">
+      <div class="header">
+        <a class="author" href="https://www.youtube.com/@Reshangr" target="_blank" rel="noopener">@Reshangr</a>
+        
+      </div>
+      <div class="text">❤</div>
+      <div class="actions">
+        <span class="like"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2.18l-.01-.01.01-.01z"/></svg>1</span>
+        <span class="heart" title="크리에이터가 좋아함">❤️</span>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="comment-thread">
+  <div class="comment">
+    <img class="avatar" src="https://yt3.ggpht.com/yO7UAFb1yWX88rrlFssfwM-QqL2yu6IdbYtsSi9ZYsyWGhfiBj3vgGx6aVUXUrjfFp7F5K3bXw=s88-c-k-c0x00ffffff-no-rj" alt="" loading="lazy">
+    <div class="comment-body">
+      <div class="header">
+        <a class="author" href="https://www.youtube.com/@%EC%82%AC%ED%83%84%EC%9D%98%ED%98%88%EC%9C%A1" target="_blank" rel="noopener">@사탄의혈육</a>
+        
+      </div>
+      <div class="text">수노 은근 발전 많이했네
+
+근데 버전 올라갈수록 새로운 문제가 생겨...</div>
+      <div class="actions">
+        <span class="like"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2.18l-.01-.01.01-.01z"/></svg>1</span>
+        <span class="heart" title="크리에이터가 좋아함">❤️</span>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="comment-thread">
+  <div class="comment">
+    <img class="avatar" src="https://yt3.ggpht.com/ytc/AIdro_nLurlmfBbMPywCVBJf5vpyPEHlfhr6OXzXQHm3t540sS0=s88-c-k-c0x00ffffff-no-rj" alt="" loading="lazy">
+    <div class="comment-body">
+      <div class="header">
+        <a class="author" href="https://www.youtube.com/@%EC%82%B0%EC%95%BC-R" target="_blank" rel="noopener">@산야-R</a>
+        
+      </div>
+      <div class="text">컨셉이 재밌는거같음 버전이 발전하면서 나아진것도 있지만 이전 버전이 이상하거나 그러진 않네 <span class="yt-emoji">yougotthis</span></div>
+      <div class="actions">
+        <span class="like"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2.18l-.01-.01.01-.01z"/></svg>1</span>
+        <span class="heart" title="크리에이터가 좋아함">❤️</span>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="comment-thread">
+  <div class="comment">
+    <img class="avatar" src="https://yt3.ggpht.com/KjJVRJ0WKSHTSN8a1KeG-5NAFbTcazxfDHzME7OeABX3tK4RmJkpHT0RMj3eFFnwBTO9oYdU1A=s88-c-k-c0x00ffffff-no-rj" alt="" loading="lazy">
+    <div class="comment-body">
+      <div class="header">
+        <a class="author" href="https://www.youtube.com/@Elmang_Light" target="_blank" rel="noopener">@Elmang_Light</a>
+        
+      </div>
+      <div class="text">수노의 여러 버전마다 서로 스타일이 매력적이고 좋은 곡들을 들어서 좋았어요. 잘 들었어요<span class="yt-emoji">face-red-heart-shape</span></div>
+      <div class="actions">
+        <span class="like"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2.18l-.01-.01.01-.01z"/></svg>1</span>
+        <span class="heart" title="크리에이터가 좋아함">❤️</span>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="comment-thread">
+  <div class="comment">
+    <img class="avatar" src="https://yt3.ggpht.com/ytc/AIdro_nWKyNr7OIhWbFMpEJhQKd6EdFjafNBZe8kxgWIixaVFSddwkQomN8yENBUGo_-X3Q9at4=s88-c-k-c0x00ffffff-no-rj" alt="" loading="lazy">
+    <div class="comment-body">
+      <div class="header">
+        <a class="author" href="https://www.youtube.com/@gs-oj4jv" target="_blank" rel="noopener">@gs-oj4jv</a>
+        
+      </div>
+      <div class="text">V2도 괜찮네
+3.5는 전설이다</div>
+      <div class="actions">
+        <span class="like"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2.18l-.01-.01.01-.01z"/></svg>1</span>
+        <span class="heart" title="크리에이터가 좋아함">❤️</span>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="comment-thread">
+  <div class="comment">
+    <img class="avatar" src="https://yt3.ggpht.com/JsmO1lH04zqHeKxASkWD6YaOKVugAIwqz9OYrYiFXYF-05A73X76P16cA-h3dCrUkFmP36q3ag=s88-c-k-c0x00ffffff-no-rj" alt="" loading="lazy">
+    <div class="comment-body">
+      <div class="header">
+        <a class="author" href="https://www.youtube.com/@%EC%B0%BD%ED%8C%9D%EC%9A%A9" target="_blank" rel="noopener">@창팝용</a>
+        
+      </div>
+      <div class="text">확실히 수노가 진화하긴 했다<span class="yt-emoji">face-purple-wide-eyes</span></div>
+      <div class="actions">
+        <span class="like"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2.18l-.01-.01.01-.01z"/></svg>1</span>
+        <span class="heart" title="크리에이터가 좋아함">❤️</span>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="comment-thread">
+  <div class="comment">
+    <img class="avatar" src="https://yt3.ggpht.com/oTzGuaZokaWvZ-LkcLttgtxsGix2P-91nywJF2RFnlZ3YNSSr4f5VSbiMr1W-TXYBPD1IkogZg=s88-c-k-c0x00ffffff-no-rj" alt="" loading="lazy">
+    <div class="comment-body">
+      <div class="header">
+        <a class="author" href="https://www.youtube.com/@%EB%B0%9C%EB%9D%BC%EB%A6%AC%EC%95%88%ED%95%9C%EB%AA%A8%EA%B8%88" target="_blank" rel="noopener">@발라리안한모금</a>
+        
+      </div>
+      <div class="text"><span class="yt-emoji">face-blue-wide-eyes</span><span class="yt-emoji">face-blue-wide-eyes</span><span class="yt-emoji">face-blue-wide-eyes</span></div>
+      <div class="actions">
+        <span class="like"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2.18l-.01-.01.01-.01z"/></svg>1</span>
+        <span class="heart" title="크리에이터가 좋아함">❤️</span>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="comment-thread">
+  <div class="comment">
+    <img class="avatar" src="https://yt3.ggpht.com/3VoS8h9a-JQHFs7XS7L0samdAp0C0oIBBwN306EE8gsf4wZtiXUgsJt9QFCzJEZiCtnAeWOt=s88-c-k-c0x00ffffff-no-rj" alt="" loading="lazy">
+    <div class="comment-body">
+      <div class="header">
+        <a class="author" href="https://www.youtube.com/@%EB%8F%84%EC%82%AC%EC%9D%98%EA%B8%B8" target="_blank" rel="noopener">@도사의길</a>
+        
+      </div>
+      <div class="text"><span class="yt-emoji">glasses-purple-yellow-diamond</span></div>
+      <div class="actions">
+        <span class="like"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2.18l-.01-.01.01-.01z"/></svg>1</span>
+        <span class="heart" title="크리에이터가 좋아함">❤️</span>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="comment-thread">
+  <div class="comment">
+    <img class="avatar" src="https://yt3.ggpht.com/9LdrUSIPUiP-0w24FCLivgGSGb3AiTifOd3F5sofLhii9B2uaNDXdGdK1bAht6-LztTlsWUXuw=s88-c-k-c0x00ffffff-no-rj" alt="" loading="lazy">
+    <div class="comment-body">
+      <div class="header">
+        <a class="author" href="https://www.youtube.com/@%EB%A6%AC%EC%8A%A8%EC%8A%9D%EC%9E%90%EA%B8%B0" target="_blank" rel="noopener">@리슨슝자기</a>
+        
+      </div>
+      <div class="text">버전이 갈수록 악기도 잘 들어가고 보이스와 싱크로도 좋아진다고 느꼈습니다. 잘 들었습니다</div>
+      <div class="actions">
+        <span class="like"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2.18l-.01-.01.01-.01z"/></svg>1</span>
+        <span class="heart" title="크리에이터가 좋아함">❤️</span>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="comment-thread">
+  <div class="comment">
+    <img class="avatar" src="https://yt3.ggpht.com/QVEVwxpfOejt5KOGZPEzHE8Bqrr-Hj70JNFpQ01LX9JQnVUPEQ6EgTP6sIqjfkUkZkPOkSgo=s88-c-k-c0x00ffffff-no-rj" alt="" loading="lazy">
+    <div class="comment-body">
+      <div class="header">
+        <a class="author" href="https://www.youtube.com/@%EC%B2%B4%ED%8F%AC%EB%82%99" target="_blank" rel="noopener">@체포낙</a>
+        
+      </div>
+      <div class="text">알았어 버전 탓 안 하면 되잖아</div>
+      <div class="actions">
+        <span class="like"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2.18l-.01-.01.01-.01z"/></svg>1</span>
+        <span class="heart" title="크리에이터가 좋아함">❤️</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,647 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>복면창팝 대회 영상 공개 - 댓글</title>
+<style>
+  :root {
+    --bg: #ffffff;
+    --fg: #0f0f0f;
+    --secondary: #606060;
+    --border: #e5e5e5;
+    --hover: #f2f2f2;
+    --pinned-bg: #fafafa;
+    --avatar-bg: #ccc;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0f0f0f;
+      --fg: #f1f1f1;
+      --secondary: #aaaaaa;
+      --border: #2f2f2f;
+      --hover: #1f1f1f;
+      --pinned-bg: #1a1a1a;
+      --avatar-bg: #444;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    font-family: "Roboto", "Noto Sans KR", Arial, sans-serif;
+    background: var(--bg);
+    color: var(--fg);
+    margin: 0;
+    padding: 1.5rem;
+  }
+  .page {
+    max-width: 760px;
+    margin: 0 auto;
+  }
+  h1 {
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin: 0 0 0.25rem;
+  }
+  .count {
+    color: var(--secondary);
+    font-size: 0.9rem;
+    margin: 0 0 1.25rem;
+  }
+  .comment-thread {
+    margin-bottom: 1.1rem;
+  }
+  .comment {
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+  }
+  .comment.is-pinned {
+    background: var(--pinned-bg);
+    border-radius: 12px;
+    padding: 8px;
+    margin: -8px -8px 0 -8px;
+  }
+  .avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    object-fit: cover;
+    background: var(--avatar-bg);
+  }
+  .avatar-placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1rem;
+  }
+  .comment-body {
+    flex: 1;
+    min-width: 0;
+  }
+  .header {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 6px;
+    font-size: 0.8125rem;
+    line-height: 1.4rem;
+  }
+  .author {
+    font-weight: 500;
+    color: var(--fg);
+    text-decoration: none;
+  }
+  .author:hover {
+    text-decoration: underline;
+  }
+  .pinned {
+    color: var(--secondary);
+    font-size: 0.75rem;
+    font-weight: 500;
+  }
+  .text {
+    font-size: 0.875rem;
+    line-height: 1.4rem;
+    white-space: pre-wrap;
+    word-break: break-word;
+    margin-top: 2px;
+  }
+  .actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 6px;
+    min-height: 1px;
+  }
+  .like {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--secondary);
+    font-size: 0.8125rem;
+  }
+  .like svg {
+    width: 16px;
+    height: 16px;
+    fill: var(--secondary);
+  }
+  .heart {
+    font-size: 0.9rem;
+  }
+  .yt-emoji {
+    display: inline-block;
+    background: var(--hover);
+    color: var(--secondary);
+    font-size: 0.7rem;
+    font-weight: 600;
+    line-height: 1;
+    padding: 2px 5px;
+    border-radius: 4px;
+    vertical-align: middle;
+    letter-spacing: 0;
+  }
+  .reply-list {
+    margin-left: 52px;
+    margin-top: 8px;
+  }
+  .comment-thread.is-reply .avatar,
+  .comment-thread.is-reply .avatar-placeholder {
+    width: 24px;
+    height: 24px;
+    font-size: 0.75rem;
+  }
+  .comment-thread.is-reply .reply-list {
+    margin-left: 36px;
+  }
+</style>
+</head>
+<body>
+<div class="page">
+  <h1>복면창팝 대회 영상 공개</h1>
+  <p class="count">댓글 29개</p>
+<div class="comment-thread">
+  <div class="comment">
+    <img class="avatar" src="https://yt3.ggpht.com/3VoS8h9a-JQHFs7XS7L0samdAp0C0oIBBwN306EE8gsf4wZtiXUgsJt9QFCzJEZiCtnAeWOt=s88-c-k-c0x00ffffff-no-rj" alt="" loading="lazy">
+    <div class="comment-body">
+      <div class="header">
+        <a class="author" href="https://www.youtube.com/@%EB%8F%84%EC%82%AC%EC%9D%98%EA%B8%B8" target="_blank" rel="noopener">@도사의길</a>
+        
+      </div>
+      <div class="text">투표가 범죄다 낄낄^^</div>
+      <div class="actions">
+        <span class="like"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2.18l-.01-.01.01-.01z"/></svg>5</span>
+        <span class="heart" title="크리에이터가 좋아함">❤️</span>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="comment-thread">
+  <div class="comment">
+    <img class="avatar" src="https://yt3.ggpht.com/jdn1Mee4WcWxGGew4vPES6qcFJVBip5E1Vje1IyUVyo2aL3iNYCfqOZrzX5UwFc296_6tBHw4os=s88-c-k-c0x00ffffff-no-rj" alt="" loading="lazy">
+    <div class="comment-body">
+      <div class="header">
+        <a class="author" href="https://www.youtube.com/@%ED%86%A0%EB%81%BC_usagi" target="_blank" rel="noopener">@토끼_usagi</a>
+        
+      </div>
+      <div class="text">❤</div>
+      <div class="actions">
+        <span class="like"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2.18l-.01-.01.01-.01z"/></svg>3</span>
+        <span class="heart" title="크리에이터가 좋아함">❤️</span>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="comment-thread">
+  <div class="comment">
+    <img class="avatar" src="https://yt3.ggpht.com/19F3t0NIastUY6dFKr6Aa5kAUxj0ohUUpnLwiSUyO2xj6UJkix7nSAnoEzzQQQYH_clZBzXATn4=s88-c-k-c0x00ffffff-no-rj" alt="" loading="lazy">
+    <div class="comment-body">
+      <div class="header">
+        <a class="author" href="https://www.youtube.com/@%EC%B0%BD%EB%93%9C%EC%BB%B5" target="_blank" rel="noopener">@창드컵</a>
+        
+      </div>
+      <div class="text">투표권 구매 가능한가요?
+메소로 살게요</div>
+      <div class="actions">
+        <span class="like"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2.18l-.01-.01.01-.01z"/></svg>2</span>
+        <span class="heart" title="크리에이터가 좋아함">❤️</span>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="comment-thread">
+  <div class="comment">
+    <img class="avatar" src="https://yt3.ggpht.com/Ba-D0fbSb-sbvAv7FSEbUc0hd7-PAvhaO_nufRVERjgx9vpzqjwZIFAUdGTIehWE83f6Zf0y=s88-c-k-c0x00ffffff-no-rj" alt="" loading="lazy">
+    <div class="comment-body">
+      <div class="header">
+        <a class="author" href="https://www.youtube.com/@%ED%85%8C%EC%9D%BC%EB%A1%9C" target="_blank" rel="noopener">@테일로</a>
+        
+      </div>
+      <div class="text">아직 수정될 수 있습니다</div>
+      <div class="actions">
+        <span class="like"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2.18l-.01-.01.01-.01z"/></svg>2</span>
+        <span class="heart" title="크리에이터가 좋아함">❤️</span>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="comment-thread">
+  <div class="comment">
+    <img class="avatar" src="https://yt3.ggpht.com/ytc/AIdro_k0bYBEK04d57xYUtNeo-OwXolrxtJ_uKEcREI0Ga1P3Xg=s88-c-k-c0x00ffffff-no-rj" alt="" loading="lazy">
+    <div class="comment-body">
+      <div class="header">
+        <a class="author" href="https://www.youtube.com/@Jinwoo_Jun" target="_blank" rel="noopener">@Jinwoo_Jun</a>
+        
+      </div>
+      <div class="text">killed the memories 백업 있음? 제작자 다 비공돌리고 채널까지 숨긴거같은데</div>
+      <div class="actions">
+        <span class="like"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2.18l-.01-.01.01-.01z"/></svg>1</span>
+        <span class="heart" title="크리에이터가 좋아함">❤️</span>
+      </div>
+    </div>
+  </div>
+<div class="reply-list">
+<div class="comment-thread is-reply">
+  <div class="comment">
+    <img class="avatar" src="https://yt3.ggpht.com/Ba-D0fbSb-sbvAv7FSEbUc0hd7-PAvhaO_nufRVERjgx9vpzqjwZIFAUdGTIehWE83f6Zf0y=s88-c-k-c0x00ffffff-no-rj" alt="" loading="lazy">
+    <div class="comment-body">
+      <div class="header">
+        <a class="author" href="https://www.youtube.com/@%ED%85%8C%EC%9D%BC%EB%A1%9C" target="_blank" rel="noopener">@테일로</a>
+        
+      </div>
+      <div class="text">있습니다 지금 밖에있어서 집 가면 부계정에 올릴게요</div>
+      <div class="actions">
+        
+        
+      </div>
+    </div>
+  </div>
+<div class="reply-list">
+<div class="comment-thread is-reply">
+  <div class="comment">
+    <img class="avatar" src="https://yt3.ggpht.com/ytc/AIdro_k0bYBEK04d57xYUtNeo-OwXolrxtJ_uKEcREI0Ga1P3Xg=s88-c-k-c0x00ffffff-no-rj" alt="" loading="lazy">
+    <div class="comment-body">
+      <div class="header">
+        <a class="author" href="https://www.youtube.com/@Jinwoo_Jun" target="_blank" rel="noopener">@Jinwoo_Jun</a>
+        
+      </div>
+      <div class="text">&#129761;</div>
+      <div class="actions">
+        <span class="like"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2.18l-.01-.01.01-.01z"/></svg>1</span>
+        <span class="heart" title="크리에이터가 좋아함">❤️</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+</div>
+
+</div>
+</div>
+<div class="comment-thread">
+  <div class="comment">
+    <img class="avatar" src="https://yt3.ggpht.com/p7QB33Xn84EM-ZHv6wgGq4tmjSPyIZFR_wf3rVFm9lOLYQvveNwYMTMiRnKX0rcabCOgRUMbM7c=s88-c-k-c0x00ffffff-no-rj" alt="" loading="lazy">
+    <div class="comment-body">
+      <div class="header">
+        <a class="author" href="https://www.youtube.com/@%EB%91%90%EC%9C%A0%EB%85%B8%EC%8B%A0%EC%B0%BD%EC%84%AD" target="_blank" rel="noopener">@두유노신창섭</a>
+        
+      </div>
+      <div class="text">❤❤</div>
+      <div class="actions">
+        <span class="like"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2.18l-.01-.01.01-.01z"/></svg>1</span>
+        <span class="heart" title="크리에이터가 좋아함">❤️</span>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="comment-thread">
+  <div class="comment">
+    <img class="avatar" src="https://yt3.ggpht.com/Xx4xan9bYCJdrnonSrZOOiCmk9nbZuacBuVCnmkk48ITUsuUlTRPBOtFTbqvsQXHD8HRu2CeVg=s88-c-k-c0x00ffffff-no-rj" alt="" loading="lazy">
+    <div class="comment-body">
+      <div class="header">
+        <a class="author" href="https://www.youtube.com/@Moojaebee" target="_blank" rel="noopener">@Moojaebee</a>
+        
+      </div>
+      <div class="text">방송에서 보고 한번 더 먹고갑니당 투표완</div>
+      <div class="actions">
+        <span class="like"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2.18l-.01-.01.01-.01z"/></svg>1</span>
+        <span class="heart" title="크리에이터가 좋아함">❤️</span>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="comment-thread">
+  <div class="comment">
+    <img class="avatar" src="https://yt3.ggpht.com/JS-FUkrAPu9O_WPMvGcGJvD7Bz9gmpV1QSdSkz1vGpqcsVqF-g0OJuJ0b-Jb32GyxzGxhUyY=s88-c-k-c0x00ffffff-no-rj" alt="" loading="lazy">
+    <div class="comment-body">
+      <div class="header">
+        <a class="author" href="https://www.youtube.com/@aaa-ligero" target="_blank" rel="noopener">@aaa-ligero</a>
+        
+      </div>
+      <div class="text">키야</div>
+      <div class="actions">
+        <span class="like"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2.18l-.01-.01.01-.01z"/></svg>1</span>
+        <span class="heart" title="크리에이터가 좋아함">❤️</span>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="comment-thread">
+  <div class="comment">
+    <img class="avatar" src="https://yt3.ggpht.com/ytc/AIdro_m803QGbUkfuDHVEPFdcWmcFL79e1aEofZx8RetfOxLTWE4__BwePMK0hFcJZ3dRKoIVg=s88-c-k-c0x00ffffff-no-rj" alt="" loading="lazy">
+    <div class="comment-body">
+      <div class="header">
+        <a class="author" href="https://www.youtube.com/@jwp-eb7jv" target="_blank" rel="noopener">@jwp-eb7jv</a>
+        
+      </div>
+      <div class="text">타임 스탬프 좀 찍어주삼</div>
+      <div class="actions">
+        <span class="like"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2.18l-.01-.01.01-.01z"/></svg>1</span>
+        <span class="heart" title="크리에이터가 좋아함">❤️</span>
+      </div>
+    </div>
+  </div>
+<div class="reply-list">
+<div class="comment-thread is-reply">
+  <div class="comment">
+    <img class="avatar" src="https://yt3.ggpht.com/Ba-D0fbSb-sbvAv7FSEbUc0hd7-PAvhaO_nufRVERjgx9vpzqjwZIFAUdGTIehWE83f6Zf0y=s88-c-k-c0x00ffffff-no-rj" alt="" loading="lazy">
+    <div class="comment-body">
+      <div class="header">
+        <a class="author" href="https://www.youtube.com/@%ED%85%8C%EC%9D%BC%EB%A1%9C" target="_blank" rel="noopener">@테일로</a>
+        
+      </div>
+      <div class="text">아 맞다</div>
+      <div class="actions">
+        
+        
+      </div>
+    </div>
+  </div>
+</div>
+<div class="comment-thread is-reply">
+  <div class="comment">
+    <img class="avatar" src="https://yt3.ggpht.com/Ba-D0fbSb-sbvAv7FSEbUc0hd7-PAvhaO_nufRVERjgx9vpzqjwZIFAUdGTIehWE83f6Zf0y=s88-c-k-c0x00ffffff-no-rj" alt="" loading="lazy">
+    <div class="comment-body">
+      <div class="header">
+        <a class="author" href="https://www.youtube.com/@%ED%85%8C%EC%9D%BC%EB%A1%9C" target="_blank" rel="noopener">@테일로</a>
+        
+      </div>
+      <div class="text">알바 갔다와서 할게요</div>
+      <div class="actions">
+        
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+</div>
+<div class="comment-thread">
+  <div class="comment">
+    <img class="avatar" src="https://yt3.ggpht.com/xfQGVaj1t6lMmpkzj-zYWeUP5tGoW0Yaahjq2AiM5iuUch5r_R_LieiLtNXWtxMK0QptmFqT_w=s88-c-k-c0x00ffffff-no-rj" alt="" loading="lazy">
+    <div class="comment-body">
+      <div class="header">
+        <a class="author" href="https://www.youtube.com/@%EB%82%A0%EB%A8%B9%EB%82%A0%EB%A8%B9%EC%8B%A0%EB%82%98%EB%8A%94%EB%82%A0%EB%A8%B9" target="_blank" rel="noopener">@날먹날먹신나는날먹</a>
+        
+      </div>
+      <div class="text">캬~ 기가 막히는구만</div>
+      <div class="actions">
+        <span class="like"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2.18l-.01-.01.01-.01z"/></svg>1</span>
+        <span class="heart" title="크리에이터가 좋아함">❤️</span>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="comment-thread">
+  <div class="comment">
+    <img class="avatar" src="https://yt3.ggpht.com/8pkIKj4lo8CcbudoVrCQKk9S19MN4_V-djta-gyk7KizXYDg4NICRP2Zj1fdn3mInHXU1Kot1g=s88-c-k-c0x00ffffff-no-rj" alt="" loading="lazy">
+    <div class="comment-body">
+      <div class="header">
+        <a class="author" href="https://www.youtube.com/@niyaniyachan" target="_blank" rel="noopener">@niyaniyachan</a>
+        
+      </div>
+      <div class="text">직관은 못했지만 지금이라도 착석...&#129394;</div>
+      <div class="actions">
+        <span class="like"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2.18l-.01-.01.01-.01z"/></svg>1</span>
+        <span class="heart" title="크리에이터가 좋아함">❤️</span>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="comment-thread">
+  <div class="comment">
+    <img class="avatar" src="https://yt3.ggpht.com/ytc/AIdro_l11mla_AbiAryioiXHzVX0qqUczt3V2kLr6VmmVo_RjiHBL6aXXPjXeRhICioksQ-pWgxNtQGi=s88-c-k-c0x00ffffff-no-rj" alt="" loading="lazy">
+    <div class="comment-body">
+      <div class="header">
+        <a class="author" href="https://www.youtube.com/@user-dafdsaf" target="_blank" rel="noopener">@user-dafdsaf</a>
+        
+      </div>
+      <div class="text">질문이 있는데 노래들은 기간 지나면 내려가고 제작자분들 채널로 가나요 아니면 이 채널에 쭉 남아있나요?</div>
+      <div class="actions">
+        <span class="like"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2.18l-.01-.01.01-.01z"/></svg>1</span>
+        <span class="heart" title="크리에이터가 좋아함">❤️</span>
+      </div>
+    </div>
+  </div>
+<div class="reply-list">
+<div class="comment-thread is-reply">
+  <div class="comment">
+    <img class="avatar" src="https://yt3.ggpht.com/Ba-D0fbSb-sbvAv7FSEbUc0hd7-PAvhaO_nufRVERjgx9vpzqjwZIFAUdGTIehWE83f6Zf0y=s88-c-k-c0x00ffffff-no-rj" alt="" loading="lazy">
+    <div class="comment-body">
+      <div class="header">
+        <a class="author" href="https://www.youtube.com/@%ED%85%8C%EC%9D%BC%EB%A1%9C" target="_blank" rel="noopener">@테일로</a>
+        
+      </div>
+      <div class="text">투표결과 공개 직후 24시간 일부공개 처리예정이고, 그다음부터는 삭제 예정입니다. 제작자분들 채널에 올라오면 관람해주세요</div>
+      <div class="actions">
+        <span class="like"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2.18l-.01-.01.01-.01z"/></svg>1</span>
+        <span class="heart" title="크리에이터가 좋아함">❤️</span>
+      </div>
+    </div>
+  </div>
+<div class="reply-list">
+<div class="comment-thread is-reply">
+  <div class="comment">
+    <img class="avatar" src="https://yt3.ggpht.com/ytc/AIdro_l11mla_AbiAryioiXHzVX0qqUczt3V2kLr6VmmVo_RjiHBL6aXXPjXeRhICioksQ-pWgxNtQGi=s88-c-k-c0x00ffffff-no-rj" alt="" loading="lazy">
+    <div class="comment-body">
+      <div class="header">
+        <a class="author" href="https://www.youtube.com/@user-dafdsaf" target="_blank" rel="noopener">@user-dafdsaf</a>
+        
+      </div>
+      <div class="text">&#160;@테일로&#160; 감사합니다!!</div>
+      <div class="actions">
+        <span class="like"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2.18l-.01-.01.01-.01z"/></svg>1</span>
+        <span class="heart" title="크리에이터가 좋아함">❤️</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+</div>
+
+</div>
+</div>
+<div class="comment-thread">
+  <div class="comment">
+    <img class="avatar" src="https://yt3.ggpht.com/ytc/AIdro_nWKyNr7OIhWbFMpEJhQKd6EdFjafNBZe8kxgWIixaVFSddwkQomN8yENBUGo_-X3Q9at4=s88-c-k-c0x00ffffff-no-rj" alt="" loading="lazy">
+    <div class="comment-body">
+      <div class="header">
+        <a class="author" href="https://www.youtube.com/@gs-oj4jv" target="_blank" rel="noopener">@gs-oj4jv</a>
+        
+      </div>
+      <div class="text">직관 못해서 아쉽네용 나중에 꼭 다 먹도록 하겠습니다</div>
+      <div class="actions">
+        <span class="like"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2.18l-.01-.01.01-.01z"/></svg>1</span>
+        <span class="heart" title="크리에이터가 좋아함">❤️</span>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="comment-thread">
+  <div class="comment">
+    <img class="avatar" src="https://yt3.ggpht.com/ytc/AIdro_kDpTl9uk7iXnTpPGxm4klKt9IKbnyF2TJx9K9dIvLfSxjuMAIbmkG6AnLgI0W4GlDF3w=s88-c-k-c0x00ffffff-no-rj" alt="" loading="lazy">
+    <div class="comment-body">
+      <div class="header">
+        <a class="author" href="https://www.youtube.com/@soso-whshsu" target="_blank" rel="noopener">@soso-whshsu</a>
+        
+      </div>
+      <div class="text">배럭돌리다 컴퓨터 터지겠네</div>
+      <div class="actions">
+        <span class="like"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2.18l-.01-.01.01-.01z"/></svg>1</span>
+        <span class="heart" title="크리에이터가 좋아함">❤️</span>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="comment-thread">
+  <div class="comment">
+    <img class="avatar" src="https://yt3.ggpht.com/-J51Y4uDrPgwMNDnjMy-v6jIe4mI-FDX_adzWEFH0VboRzHVVw9VoVH7K9h_uu_5SKWTLouHSzo=s88-c-k-c0x00ffffff-no-rj" alt="" loading="lazy">
+    <div class="comment-body">
+      <div class="header">
+        <a class="author" href="https://www.youtube.com/@%ED%95%98%EC%96%80_%EA%B9%8C%EB%A7%9D" target="_blank" rel="noopener">@하얀_까망</a>
+        
+      </div>
+      <div class="text">이게 진지하게 창드컵보다 더 어려움...</div>
+      <div class="actions">
+        <span class="like"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2.18l-.01-.01.01-.01z"/></svg>1</span>
+        <span class="heart" title="크리에이터가 좋아함">❤️</span>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="comment-thread">
+  <div class="comment">
+    <img class="avatar" src="https://yt3.ggpht.com/eeGy8HxQPPSCd-2Q2amybL8QQDqrfsP1chvOp1WPBqm-PubXJQBsbViwchylT3BOzFNQ_-BX=s88-c-k-c0x00ffffff-no-rj" alt="" loading="lazy">
+    <div class="comment-body">
+      <div class="header">
+        <a class="author" href="https://www.youtube.com/@%EC%9D%BC%EB%A6%AC%EC%9B%80%EC%9D%98%EC%95%84%EB%B2%84%EC%A7%80%EC%8B%A0%EC%B0%BD%EC%84%AD" target="_blank" rel="noopener">@일리움의아버지신창섭</a>
+        
+      </div>
+      <div class="text">너무 어려워~<span class="yt-emoji">face-turquoise-drinking-coffee</span><span class="yt-emoji">face-fuchsia-tongue-out</span><span class="yt-emoji">face-turquoise-drinking-coffee</span></div>
+      <div class="actions">
+        <span class="like"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2.18l-.01-.01.01-.01z"/></svg>1</span>
+        <span class="heart" title="크리에이터가 좋아함">❤️</span>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="comment-thread">
+  <div class="comment">
+    <img class="avatar" src="https://yt3.ggpht.com/oOcnbqTw3SUl-nklTIc5u-l6KQVIlNqS0k9BL7kFg6MRfImdLeI-d5hNVcom2pO-JDXllkmk5g=s88-c-k-c0x00ffffff-no-rj" alt="" loading="lazy">
+    <div class="comment-body">
+      <div class="header">
+        <a class="author" href="https://www.youtube.com/@Trance-l5j" target="_blank" rel="noopener">@Trance-l5j</a>
+        
+      </div>
+      <div class="text">❤❤❤</div>
+      <div class="actions">
+        <span class="like"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2.18l-.01-.01.01-.01z"/></svg>1</span>
+        <span class="heart" title="크리에이터가 좋아함">❤️</span>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="comment-thread">
+  <div class="comment">
+    <img class="avatar" src="https://yt3.ggpht.com/PHowJYE_qgQbiOWckXOG_rEmh1LoLG75_5a4hP-C4KPxnzp-4Iw_Q2nYnwty8TqzdaO9GgrF=s88-c-k-c0x00ffffff-no-rj" alt="" loading="lazy">
+    <div class="comment-body">
+      <div class="header">
+        <a class="author" href="https://www.youtube.com/@dhch93" target="_blank" rel="noopener">@dhch93</a>
+        
+      </div>
+      <div class="text">미쳤다 진짜</div>
+      <div class="actions">
+        <span class="like"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2.18l-.01-.01.01-.01z"/></svg>1</span>
+        <span class="heart" title="크리에이터가 좋아함">❤️</span>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="comment-thread">
+  <div class="comment">
+    <img class="avatar" src="https://yt3.ggpht.com/Os6e_-QYdawIkasOAYGFvVubVZoPQ1gfk3HcXOq9QdCDDRTKx0IuwNbNRNvyavcwKyOoHRyU=s88-c-k-c0x00ffffff-no-rj" alt="" loading="lazy">
+    <div class="comment-body">
+      <div class="header">
+        <a class="author" href="https://www.youtube.com/@%EB%A6%AC%EC%9E%90%EC%98%88" target="_blank" rel="noopener">@리자예</a>
+        
+      </div>
+      <div class="text"><span class="yt-emoji">popcorn-yellow-striped-smile</span></div>
+      <div class="actions">
+        <span class="like"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2.18l-.01-.01.01-.01z"/></svg>1</span>
+        <span class="heart" title="크리에이터가 좋아함">❤️</span>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="comment-thread">
+  <div class="comment">
+    <img class="avatar" src="https://yt3.ggpht.com/_bGF3eVmI7BIdxjPknKWQtGqqD7HAhb7hvpSapvLCnqyFvEW8rZjpMC067WMZE9UMespEoeN0sA=s88-c-k-c0x00ffffff-no-rj" alt="" loading="lazy">
+    <div class="comment-body">
+      <div class="header">
+        <a class="author" href="https://www.youtube.com/@Hi_Yung" target="_blank" rel="noopener">@Hi_Yung</a>
+        
+      </div>
+      <div class="text">❤❤❤❤❤</div>
+      <div class="actions">
+        <span class="like"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2.18l-.01-.01.01-.01z"/></svg>1</span>
+        <span class="heart" title="크리에이터가 좋아함">❤️</span>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="comment-thread">
+  <div class="comment">
+    <img class="avatar" src="https://yt3.ggpht.com/PHowJYE_qgQbiOWckXOG_rEmh1LoLG75_5a4hP-C4KPxnzp-4Iw_Q2nYnwty8TqzdaO9GgrF=s88-c-k-c0x00ffffff-no-rj" alt="" loading="lazy">
+    <div class="comment-body">
+      <div class="header">
+        <a class="author" href="https://www.youtube.com/@dhch93" target="_blank" rel="noopener">@dhch93</a>
+        
+      </div>
+      <div class="text">기대중이야요&#128522;</div>
+      <div class="actions">
+        <span class="like"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2.18l-.01-.01.01-.01z"/></svg>1</span>
+        <span class="heart" title="크리에이터가 좋아함">❤️</span>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="comment-thread">
+  <div class="comment">
+    <img class="avatar" src="https://yt3.ggpht.com/ytc/AIdro_nWKyNr7OIhWbFMpEJhQKd6EdFjafNBZe8kxgWIixaVFSddwkQomN8yENBUGo_-X3Q9at4=s88-c-k-c0x00ffffff-no-rj" alt="" loading="lazy">
+    <div class="comment-body">
+      <div class="header">
+        <a class="author" href="https://www.youtube.com/@gs-oj4jv" target="_blank" rel="noopener">@gs-oj4jv</a>
+        
+      </div>
+      <div class="text">최 초 공 개</div>
+      <div class="actions">
+        <span class="like"><svg viewBox="0 0 24 24"><path d="M1 21h4V9H1v12zm22-11c0-1.1-.9-2-2-2h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 1 7.59 7.59C7.22 7.95 7 8.45 7 9v10c0 1.1.9 2 2 2h9c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73v-2.18l-.01-.01.01-.01z"/></svg>1</span>
+        <span class="heart" title="크리에이터가 좋아함">❤️</span>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="comment-thread">
+  <div class="comment">
+    <img class="avatar" src="https://yt3.ggpht.com/ytc/AIdro_laNViWFdgfxwVBzEusVLpz53LXcHVBHxia7orjXyA=s88-c-k-c0x00ffffff-no-rj" alt="" loading="lazy">
+    <div class="comment-body">
+      <div class="header">
+        <a class="author" href="https://www.youtube.com/@bzp7083" target="_blank" rel="noopener">@bzp7083</a>
+        
+      </div>
+      <div class="text">sex</div>
+      <div class="actions">
+        
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+</body>
+</html>

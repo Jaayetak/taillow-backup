@@ -1,0 +1,2080 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>제 1회 쇼츠 창팝 콘테스트 [KXJutwwqd_I]</title>
+<style>
+  :root {
+    --bg: #ffffff;
+    --fg: #1a1a1a;
+    --time-color: #767676;
+    --author-color: #1a73e8;
+    --avatar-bg: #e0e0e0;
+    --highlight-fg: #ffffff;
+    --highlight-time: rgba(255,255,255,0.75);
+    --superchat-bg: #1e88e5;
+    --membership-bg: #2e7d32;
+    --sticker-bg: #6a1b9a;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0f0f0f;
+      --fg: #e5e5e5;
+      --time-color: #888;
+      --author-color: #65b1ff;
+      --avatar-bg: #333;
+    }
+  }
+  body {
+    font-family: sans-serif;
+    background: var(--bg);
+    color: var(--fg);
+    margin: 0;
+    padding: 1rem;
+  }
+  .chat {
+    max-width: 720px;
+    margin: 0 auto;
+  }
+  .msg {
+    display: flex;
+    gap: 0.5rem;
+    padding: 0.3rem 0.6rem;
+    align-items: flex-start;
+    font-size: 0.92rem;
+    line-height: 1.4;
+  }
+  .avatar {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    margin-top: 0.15rem;
+    object-fit: cover;
+    background: var(--avatar-bg);
+  }
+  .avatar-placeholder {
+    display: inline-block;
+  }
+  .bubble {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 0.4em;
+    border-radius: 8px;
+    padding: 0.15rem 0.5rem;
+  }
+  .msg.superchat .bubble { background: var(--superchat-bg); color: var(--highlight-fg); }
+  .msg.membership .bubble { background: var(--membership-bg); color: var(--highlight-fg); }
+  .msg.sticker .bubble { background: var(--sticker-bg); color: var(--highlight-fg); }
+  .time {
+    color: var(--time-color);
+    font-size: 0.78rem;
+    flex-shrink: 0;
+  }
+  .msg.superchat .time, .msg.membership .time, .msg.sticker .time {
+    color: var(--highlight-time);
+  }
+  .author {
+    font-weight: 600;
+    color: var(--author-color);
+    flex-shrink: 0;
+  }
+  .msg.superchat .author, .msg.membership .author, .msg.sticker .author {
+    color: var(--highlight-fg);
+  }
+  .amount {
+    font-weight: 700;
+    margin-left: 0.4em;
+  }
+  .text-content {
+    word-break: break-word;
+  }
+  .emoji {
+    width: 1.2em;
+    height: 1.2em;
+    vertical-align: middle;
+    display: inline-block;
+  }
+  .sticker {
+    width: 64px;
+    height: 64px;
+    display: block;
+    margin-top: 0.3rem;
+  }
+</style>
+</head>
+<body>
+<div class="chat">
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/38QzfjtBOW4dv4nPvj2g7etzex7E-5MXI5m5pd1LfRx6sTzYXhd0rp9HDOt-0P9oP_b9ZinU=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">-48:21</span>
+    <span class="author">@제트스파우스</span>
+    <span class="text-content">캬</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/38QzfjtBOW4dv4nPvj2g7etzex7E-5MXI5m5pd1LfRx6sTzYXhd0rp9HDOt-0P9oP_b9ZinU=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">-48:16</span>
+    <span class="author">@제트스파우스</span>
+    <span class="text-content">완성 됐구나</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/38QzfjtBOW4dv4nPvj2g7etzex7E-5MXI5m5pd1LfRx6sTzYXhd0rp9HDOt-0P9oP_b9ZinU=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">-47:38</span>
+    <span class="author">@제트스파우스</span>
+    <span class="text-content"><img class="emoji" src="https://yt3.ggpht.com/KOxdr_z3A5h1Gb7kqnxqOCnbZrBmxI2B_tRQ453BhTWUhYAlpg5ZP8IKEBkcvRoY8grY91Q=w48-h48-c-k-nd" alt=":hand-pink-waving:" title=":hand-pink-waving:"><img class="emoji" src="https://yt3.ggpht.com/KOxdr_z3A5h1Gb7kqnxqOCnbZrBmxI2B_tRQ453BhTWUhYAlpg5ZP8IKEBkcvRoY8grY91Q=w48-h48-c-k-nd" alt=":hand-pink-waving:" title=":hand-pink-waving:"><img class="emoji" src="https://yt3.ggpht.com/KOxdr_z3A5h1Gb7kqnxqOCnbZrBmxI2B_tRQ453BhTWUhYAlpg5ZP8IKEBkcvRoY8grY91Q=w48-h48-c-k-nd" alt=":hand-pink-waving:" title=":hand-pink-waving:"></span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/14cGw_5G1XszXBU-1sGYa-ZhMmFhzgPvSV3hvWhrcQ1z3CrUD1fOSMAH-aMXP9JMGi1h4iESRA=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">-47:18</span>
+    <span class="author">@Celltrion802</span>
+    <span class="text-content">큰거 왔다</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/Ba-D0fbSb-sbvAv7FSEbUc0hd7-PAvhaO_nufRVERjgx9vpzqjwZIFAUdGTIehWE83f6Zf0y=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">-46:06</span>
+    <span class="author">@테일로</span>
+    <span class="text-content">완성?이라기에는 그냥 합치기만 하긴 했습니다</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/38QzfjtBOW4dv4nPvj2g7etzex7E-5MXI5m5pd1LfRx6sTzYXhd0rp9HDOt-0P9oP_b9ZinU=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">-45:32</span>
+    <span class="author">@제트스파우스</span>
+    <span class="text-content">결과물 나왔으면 완성이잖아 한잔해~</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/Ba-D0fbSb-sbvAv7FSEbUc0hd7-PAvhaO_nufRVERjgx9vpzqjwZIFAUdGTIehWE83f6Zf0y=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">-45:07</span>
+    <span class="author">@테일로</span>
+    <span class="text-content">30초정도의 짧게 만들어주신 창팝 모음집입니다~</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/QVEVwxpfOejt5KOGZPEzHE8Bqrr-Hj70JNFpQ01LX9JQnVUPEQ6EgTP6sIqjfkUkZkPOkSgo=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">-37:52</span>
+    <span class="author">@체포낙</span>
+    <span class="text-content"><img class="emoji" src="https://yt3.ggpht.com/HmsXEgqUogkQOnL5LP_FdPit9Z909RJxby-uYcPxBLNhaPyqPTcGwvGaGPk2hzB_cC0hs_pV=w48-h48-c-k-nd" alt=":face-orange-biting-nails:" title=":face-orange-biting-nails:"></span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/JsmO1lH04zqHeKxASkWD6YaOKVugAIwqz9OYrYiFXYF-05A73X76P16cA-h3dCrUkFmP36q3ag=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">-26:34</span>
+    <span class="author">@창팝용</span>
+    <span class="text-content"><img class="emoji" src="https://yt3.ggpht.com/KOxdr_z3A5h1Gb7kqnxqOCnbZrBmxI2B_tRQ453BhTWUhYAlpg5ZP8IKEBkcvRoY8grY91Q=w48-h48-c-k-nd" alt=":hand-pink-waving:" title=":hand-pink-waving:"><img class="emoji" src="https://yt3.ggpht.com/KOxdr_z3A5h1Gb7kqnxqOCnbZrBmxI2B_tRQ453BhTWUhYAlpg5ZP8IKEBkcvRoY8grY91Q=w48-h48-c-k-nd" alt=":hand-pink-waving:" title=":hand-pink-waving:"><img class="emoji" src="https://yt3.ggpht.com/KOxdr_z3A5h1Gb7kqnxqOCnbZrBmxI2B_tRQ453BhTWUhYAlpg5ZP8IKEBkcvRoY8grY91Q=w48-h48-c-k-nd" alt=":hand-pink-waving:" title=":hand-pink-waving:"></span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/Ba-D0fbSb-sbvAv7FSEbUc0hd7-PAvhaO_nufRVERjgx9vpzqjwZIFAUdGTIehWE83f6Zf0y=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">-21:56</span>
+    <span class="author">@테일로</span>
+    <span class="text-content">첫번째 곡이 다른 곡에 비해서 소리가 조금 많이 작습니다 처음 곡은 소리를 과하다 싶을정도로 키워주세요!</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/38QzfjtBOW4dv4nPvj2g7etzex7E-5MXI5m5pd1LfRx6sTzYXhd0rp9HDOt-0P9oP_b9ZinU=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">-21:15</span>
+    <span class="author">@제트스파우스</span>
+    <span class="text-content"><img class="emoji" src="https://yt3.ggpht.com/s3uOe4lUx3iPIt1h901SlMp_sKCTp3oOVj1JV8izBw_vDVLxFqk5dq-3NX-nK_gnUwVEXld3=w48-h48-c-k-nd" alt=":yougotthis:" title=":yougotthis:"></span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/38QzfjtBOW4dv4nPvj2g7etzex7E-5MXI5m5pd1LfRx6sTzYXhd0rp9HDOt-0P9oP_b9ZinU=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">-21:11</span>
+    <span class="author">@제트스파우스</span>
+    <span class="text-content">확인</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/MgZ-URUMO_2GqxLVnyQOH-fF7gWxe8kYZ3zGOI4ZPTApjQo-uT61lH51WMabZUlNyFHBq_k4=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">-17:01</span>
+    <span class="author">@릴창섭</span>
+    <span class="text-content"><img class="emoji" src="https://yt3.ggpht.com/0ocqEmuhrKCK87_J21lBkvjW70wRGC32-Buwk6TP4352CgcNjL6ug8zcsel6JiPbE58xhq5g=w48-h48-c-k-nd" alt=":cat-orange-whistling:" title=":cat-orange-whistling:"></span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/KjJVRJ0WKSHTSN8a1KeG-5NAFbTcazxfDHzME7OeABX3tK4RmJkpHT0RMj3eFFnwBTO9oYdU1A=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">-15:52</span>
+    <span class="author">@Elmang_Light</span>
+    <span class="text-content"><img class="emoji" src="https://yt3.ggpht.com/KOxdr_z3A5h1Gb7kqnxqOCnbZrBmxI2B_tRQ453BhTWUhYAlpg5ZP8IKEBkcvRoY8grY91Q=w48-h48-c-k-nd" alt=":hand-pink-waving:" title=":hand-pink-waving:"></span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/wige6O4edxqtO0S0dttP4Vx53js4jbCItiajBjNs8ciTJsgBMvCaO4Sc29xYJhjrA9ZjIcYHUd4=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">-07:13</span>
+    <span class="author">@GLAnology</span>
+    <span class="text-content"><img class="emoji" src="https://yt3.ggpht.com/KOxdr_z3A5h1Gb7kqnxqOCnbZrBmxI2B_tRQ453BhTWUhYAlpg5ZP8IKEBkcvRoY8grY91Q=w48-h48-c-k-nd" alt=":hand-pink-waving:" title=":hand-pink-waving:"><img class="emoji" src="https://yt3.ggpht.com/KOxdr_z3A5h1Gb7kqnxqOCnbZrBmxI2B_tRQ453BhTWUhYAlpg5ZP8IKEBkcvRoY8grY91Q=w48-h48-c-k-nd" alt=":hand-pink-waving:" title=":hand-pink-waving:"></span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/QVEVwxpfOejt5KOGZPEzHE8Bqrr-Hj70JNFpQ01LX9JQnVUPEQ6EgTP6sIqjfkUkZkPOkSgo=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">-06:54</span>
+    <span class="author">@체포낙</span>
+    <span class="text-content">말투가 달라진 거 같아요</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/ytc/AIdro_nLurlmfBbMPywCVBJf5vpyPEHlfhr6OXzXQHm3t540sS0=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">-05:45</span>
+    <span class="author">@산야-R</span>
+    <span class="text-content">여긴가..</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/14cGw_5G1XszXBU-1sGYa-ZhMmFhzgPvSV3hvWhrcQ1z3CrUD1fOSMAH-aMXP9JMGi1h4iESRA=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">-03:49</span>
+    <span class="author">@Celltrion802</span>
+    <span class="text-content">문열어ㅓㅓ</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/06mhTXCdfW7yZfIAA9AdKtm53O3oPHtsQ3KWy4rJMtjm5Xkd9HXl-Xn7DbWSOo5geRrUWFyQ8w=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">-03:36</span>
+    <span class="author">@Colrma</span>
+    <span class="text-content"><img class="emoji" src="https://yt3.ggpht.com/5RDrtjmzRQKuVYE_FKPUHiGh7TNtX5eSNe6XzcSytMsHirXYKunxpyAsVacTFMg0jmUGhQ=w48-h48-c-k-nd" alt=":face-purple-wide-eyes:" title=":face-purple-wide-eyes:"></span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/O62eyC_Cta__Cb4Bjqy79QwL7d_hyv-mJLBrBi1unhzuq-ZgjC7wlABTvV8hn_dFMXDxd5O1Ew=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">-03:08</span>
+    <span class="author">@ijiboom</span>
+    <span class="text-content">여긴가</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/ICMnCu7c3UPf7RsTeHtBsSzOsiHpyDarfau3929gK9mXWc2yESG__QGwift0Y1vJc2ShwrO-97o=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">-03:03</span>
+    <span class="author">@미라크르메이풀</span>
+    <span class="text-content">소리 키워달라고? 통발은 아니겠지?</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/Ba-D0fbSb-sbvAv7FSEbUc0hd7-PAvhaO_nufRVERjgx9vpzqjwZIFAUdGTIehWE83f6Zf0y=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">-02:41</span>
+    <span class="author">@테일로</span>
+    <span class="text-content">저는 통발 한번도 안해봄</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/14cGw_5G1XszXBU-1sGYa-ZhMmFhzgPvSV3hvWhrcQ1z3CrUD1fOSMAH-aMXP9JMGi1h4iESRA=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">-02:27</span>
+    <span class="author">@Celltrion802</span>
+    <span class="text-content">??</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/ICMnCu7c3UPf7RsTeHtBsSzOsiHpyDarfau3929gK9mXWc2yESG__QGwift0Y1vJc2ShwrO-97o=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">-02:17</span>
+    <span class="author">@미라크르메이풀</span>
+    <span class="text-content">?</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/PIvdcYzE0UVTBBrdtopirZAKIw6KccW-zcOUZYgDh8yAP7jLxozLq-zkVI2acwz7U9su2zau=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">-02:16</span>
+    <span class="author">@ETUDENOTE</span>
+    <span class="text-content"><img class="emoji" src="https://yt3.ggpht.com/oih9s26MOYPWC_uL6tgaeOlXSGBv8MMoDrWzBt-80nEiVSL9nClgnuzUAKqkU9_TWygF6CI=w48-h48-c-k-nd" alt=":face-red-droopy-eyes:" title=":face-red-droopy-eyes:"></span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/Os6e_-QYdawIkasOAYGFvVubVZoPQ1gfk3HcXOq9QdCDDRTKx0IuwNbNRNvyavcwKyOoHRyU=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">-02:07</span>
+    <span class="author">@리자예</span>
+    <span class="text-content"><img class="emoji" src="https://yt3.ggpht.com/5gfMEfdqO9CiLwhN9Mq7VI6--T2QFp8AXNNy5Fo7btfY6fRKkThWq35SCZ6SPMVCjg-sUA=w48-h48-c-k-nd" alt=":buffering:" title=":buffering:"></span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/38QzfjtBOW4dv4nPvj2g7etzex7E-5MXI5m5pd1LfRx6sTzYXhd0rp9HDOt-0P9oP_b9ZinU=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">-02:03</span>
+    <span class="author">@제트스파우스</span>
+    <span class="text-content"><img class="emoji" src="https://yt3.ggpht.com/5gfMEfdqO9CiLwhN9Mq7VI6--T2QFp8AXNNy5Fo7btfY6fRKkThWq35SCZ6SPMVCjg-sUA=w48-h48-c-k-nd" alt=":buffering:" title=":buffering:"><img class="emoji" src="https://yt3.ggpht.com/5gfMEfdqO9CiLwhN9Mq7VI6--T2QFp8AXNNy5Fo7btfY6fRKkThWq35SCZ6SPMVCjg-sUA=w48-h48-c-k-nd" alt=":buffering:" title=":buffering:"></span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/ICMnCu7c3UPf7RsTeHtBsSzOsiHpyDarfau3929gK9mXWc2yESG__QGwift0Y1vJc2ShwrO-97o=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">-01:59</span>
+    <span class="author">@미라크르메이풀</span>
+    <span class="text-content">통발이네</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/ICMnCu7c3UPf7RsTeHtBsSzOsiHpyDarfau3929gK9mXWc2yESG__QGwift0Y1vJc2ShwrO-97o=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">00:00</span>
+    <span class="author">@미라크르메이풀</span>
+    <span class="text-content">5분 왤케 빠름</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/ytc/AIdro_nLurlmfBbMPywCVBJf5vpyPEHlfhr6OXzXQHm3t540sS0=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">00:02</span>
+    <span class="author">@산야-R</span>
+    <span class="text-content">드가자</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/JsmO1lH04zqHeKxASkWD6YaOKVugAIwqz9OYrYiFXYF-05A73X76P16cA-h3dCrUkFmP36q3ag=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">00:04</span>
+    <span class="author">@창팝용</span>
+    <span class="text-content">슴슴하지 않네</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/QVEVwxpfOejt5KOGZPEzHE8Bqrr-Hj70JNFpQ01LX9JQnVUPEQ6EgTP6sIqjfkUkZkPOkSgo=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">00:04</span>
+    <span class="author">@체포낙</span>
+    <span class="text-content">와몸 매</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/KjJVRJ0WKSHTSN8a1KeG-5NAFbTcazxfDHzME7OeABX3tK4RmJkpHT0RMj3eFFnwBTO9oYdU1A=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">00:06</span>
+    <span class="author">@Elmang_Light</span>
+    <span class="text-content">오</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/JsmO1lH04zqHeKxASkWD6YaOKVugAIwqz9OYrYiFXYF-05A73X76P16cA-h3dCrUkFmP36q3ag=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">00:09</span>
+    <span class="author">@창팝용</span>
+    <span class="text-content">뭐야</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/DrwVh7YGNr_UiCTs4CyXowSf9nxU6kmwwLXwy73lJhEr1W9_BZCgXnoU76c8Nldw4zoQ867Lvoc=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">00:09</span>
+    <span class="author">@편초자</span>
+    <span class="text-content">들이</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/38QzfjtBOW4dv4nPvj2g7etzex7E-5MXI5m5pd1LfRx6sTzYXhd0rp9HDOt-0P9oP_b9ZinU=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">00:10</span>
+    <span class="author">@제트스파우스</span>
+    <span class="text-content">오</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/3VoS8h9a-JQHFs7XS7L0samdAp0C0oIBBwN306EE8gsf4wZtiXUgsJt9QFCzJEZiCtnAeWOt=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">00:10</span>
+    <span class="author">@도사의길</span>
+    <span class="text-content">ㄷㄱㅈ</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/JsmO1lH04zqHeKxASkWD6YaOKVugAIwqz9OYrYiFXYF-05A73X76P16cA-h3dCrUkFmP36q3ag=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">00:12</span>
+    <span class="author">@창팝용</span>
+    <span class="text-content">ㄷㄱㅈ</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/yO7UAFb1yWX88rrlFssfwM-QqL2yu6IdbYtsSi9ZYsyWGhfiBj3vgGx6aVUXUrjfFp7F5K3bXw=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">00:12</span>
+    <span class="author">@사탄의혈육</span>
+    <span class="text-content">시차가 있어서 5분 맞다네요~</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/DrwVh7YGNr_UiCTs4CyXowSf9nxU6kmwwLXwy73lJhEr1W9_BZCgXnoU76c8Nldw4zoQ867Lvoc=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">00:13</span>
+    <span class="author">@편초자</span>
+    <span class="text-content">와우</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/3VoS8h9a-JQHFs7XS7L0samdAp0C0oIBBwN306EE8gsf4wZtiXUgsJt9QFCzJEZiCtnAeWOt=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">00:18</span>
+    <span class="author">@도사의길</span>
+    <span class="text-content">내아내임</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/ICMnCu7c3UPf7RsTeHtBsSzOsiHpyDarfau3929gK9mXWc2yESG__QGwift0Y1vJc2ShwrO-97o=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">00:20</span>
+    <span class="author">@미라크르메이풀</span>
+    <span class="text-content">아 그거다</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/38QzfjtBOW4dv4nPvj2g7etzex7E-5MXI5m5pd1LfRx6sTzYXhd0rp9HDOt-0P9oP_b9ZinU=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">00:23</span>
+    <span class="author">@제트스파우스</span>
+    <span class="text-content">캬~</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/38QzfjtBOW4dv4nPvj2g7etzex7E-5MXI5m5pd1LfRx6sTzYXhd0rp9HDOt-0P9oP_b9ZinU=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">00:25</span>
+    <span class="author">@제트스파우스</span>
+    <span class="text-content">플라워 블룸이네</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/oTzGuaZokaWvZ-LkcLttgtxsGix2P-91nywJF2RFnlZ3YNSSr4f5VSbiMr1W-TXYBPD1IkogZg=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">00:25</span>
+    <span class="author">@발라리안한모금</span>
+    <span class="text-content">이야</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/wige6O4edxqtO0S0dttP4Vx53js4jbCItiajBjNs8ciTJsgBMvCaO4Sc29xYJhjrA9ZjIcYHUd4=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">00:28</span>
+    <span class="author">@GLAnology</span>
+    <span class="text-content">와 몸매</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/ytc/AIdro_nLurlmfBbMPywCVBJf5vpyPEHlfhr6OXzXQHm3t540sS0=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">00:30</span>
+    <span class="author">@산야-R</span>
+    <span class="text-content">개 화</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/MgZ-URUMO_2GqxLVnyQOH-fF7gWxe8kYZ3zGOI4ZPTApjQo-uT61lH51WMabZUlNyFHBq_k4=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">00:34</span>
+    <span class="author">@릴창섭</span>
+    <span class="text-content"><img class="emoji" src="https://fonts.gstatic.com/s/e/notoemoji/15.1/2764_200d_1f525/72.png" alt=":heart_on_fire:" title=":heart_on_fire:"></span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/JsmO1lH04zqHeKxASkWD6YaOKVugAIwqz9OYrYiFXYF-05A73X76P16cA-h3dCrUkFmP36q3ag=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">00:36</span>
+    <span class="author">@창팝용</span>
+    <span class="text-content">캬</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/DrwVh7YGNr_UiCTs4CyXowSf9nxU6kmwwLXwy73lJhEr1W9_BZCgXnoU76c8Nldw4zoQ867Lvoc=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">00:36</span>
+    <span class="author">@편초자</span>
+    <span class="text-content">엣호</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/yO7UAFb1yWX88rrlFssfwM-QqL2yu6IdbYtsSi9ZYsyWGhfiBj3vgGx6aVUXUrjfFp7F5K3bXw=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">00:36</span>
+    <span class="author">@사탄의혈육</span>
+    <span class="text-content">와 암술</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/QVEVwxpfOejt5KOGZPEzHE8Bqrr-Hj70JNFpQ01LX9JQnVUPEQ6EgTP6sIqjfkUkZkPOkSgo=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">00:37</span>
+    <span class="author">@체포낙</span>
+    <span class="text-content">엣 호</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/DrwVh7YGNr_UiCTs4CyXowSf9nxU6kmwwLXwy73lJhEr1W9_BZCgXnoU76c8Nldw4zoQ867Lvoc=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">00:38</span>
+    <span class="author">@편초자</span>
+    <span class="text-content">엣호</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/ICMnCu7c3UPf7RsTeHtBsSzOsiHpyDarfau3929gK9mXWc2yESG__QGwift0Y1vJc2ShwrO-97o=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">00:39</span>
+    <span class="author">@미라크르메이풀</span>
+    <span class="text-content">개화났다는 건가?</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/DrwVh7YGNr_UiCTs4CyXowSf9nxU6kmwwLXwy73lJhEr1W9_BZCgXnoU76c8Nldw4zoQ867Lvoc=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">00:41</span>
+    <span class="author">@편초자</span>
+    <span class="text-content">엣 호</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/ytc/AIdro_nLurlmfBbMPywCVBJf5vpyPEHlfhr6OXzXQHm3t540sS0=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">00:41</span>
+    <span class="author">@산야-R</span>
+    <span class="text-content">엣 호</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/QVEVwxpfOejt5KOGZPEzHE8Bqrr-Hj70JNFpQ01LX9JQnVUPEQ6EgTP6sIqjfkUkZkPOkSgo=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">00:42</span>
+    <span class="author">@체포낙</span>
+    <span class="text-content">와몸 매</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/DrwVh7YGNr_UiCTs4CyXowSf9nxU6kmwwLXwy73lJhEr1W9_BZCgXnoU76c8Nldw4zoQ867Lvoc=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">00:44</span>
+    <span class="author">@편초자</span>
+    <span class="text-content">엣 호</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/oTzGuaZokaWvZ-LkcLttgtxsGix2P-91nywJF2RFnlZ3YNSSr4f5VSbiMr1W-TXYBPD1IkogZg=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">00:46</span>
+    <span class="author">@발라리안한모금</span>
+    <span class="text-content">ㄹㅇ 쇼츠네</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/KjJVRJ0WKSHTSN8a1KeG-5NAFbTcazxfDHzME7OeABX3tK4RmJkpHT0RMj3eFFnwBTO9oYdU1A=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">00:46</span>
+    <span class="author">@Elmang_Light</span>
+    <span class="text-content">ㅇㅎ</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/3VoS8h9a-JQHFs7XS7L0samdAp0C0oIBBwN306EE8gsf4wZtiXUgsJt9QFCzJEZiCtnAeWOt=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">00:47</span>
+    <span class="author">@도사의길</span>
+    <span class="text-content"><img class="emoji" src="https://yt3.ggpht.com/cktIaPxFwnrPwn-alHvnvedHLUJwbHi8HCK3AgbHpphrMAW99qw0bDfxuZagSY5ieE9BBrA=w48-h48-c-k-nd" alt=":face-blue-smiling:" title=":face-blue-smiling:"></span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/JsmO1lH04zqHeKxASkWD6YaOKVugAIwqz9OYrYiFXYF-05A73X76P16cA-h3dCrUkFmP36q3ag=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">00:47</span>
+    <span class="author">@창팝용</span>
+    <span class="text-content">영상이 5분이란 건가 예열은 아니고</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/DrwVh7YGNr_UiCTs4CyXowSf9nxU6kmwwLXwy73lJhEr1W9_BZCgXnoU76c8Nldw4zoQ867Lvoc=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">00:51</span>
+    <span class="author">@편초자</span>
+    <span class="text-content">엣 호</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/DrwVh7YGNr_UiCTs4CyXowSf9nxU6kmwwLXwy73lJhEr1W9_BZCgXnoU76c8Nldw4zoQ867Lvoc=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">00:53</span>
+    <span class="author">@편초자</span>
+    <span class="text-content">엣 호</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/14cGw_5G1XszXBU-1sGYa-ZhMmFhzgPvSV3hvWhrcQ1z3CrUD1fOSMAH-aMXP9JMGi1h4iESRA=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">00:53</span>
+    <span class="author">@Celltrion802</span>
+    <span class="text-content">엣 호</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/wige6O4edxqtO0S0dttP4Vx53js4jbCItiajBjNs8ciTJsgBMvCaO4Sc29xYJhjrA9ZjIcYHUd4=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">00:55</span>
+    <span class="author">@GLAnology</span>
+    <span class="text-content">엣 호</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/JsmO1lH04zqHeKxASkWD6YaOKVugAIwqz9OYrYiFXYF-05A73X76P16cA-h3dCrUkFmP36q3ag=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">00:56</span>
+    <span class="author">@창팝용</span>
+    <span class="text-content">엣호</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/38QzfjtBOW4dv4nPvj2g7etzex7E-5MXI5m5pd1LfRx6sTzYXhd0rp9HDOt-0P9oP_b9ZinU=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">00:56</span>
+    <span class="author">@제트스파우스</span>
+    <span class="text-content">엣 호</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/ytc/AIdro_ntLLnhsaIcV5UPLGebSgBUUsebhLcEYno_1EeVTCZ6Kg=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">01:00</span>
+    <span class="author">@김태영-m7v</span>
+    <span class="text-content"><img class="emoji" src="https://yt3.ggpht.com/DTR9bZd1HOqpRJyz9TKiLb0cqe5Hb84Yi_79A6LWlN1tY-5kXqLDXRmtYVKE9rcqzEghmw=w48-h48-c-k-nd" alt=":elbowcough:" title=":elbowcough:"></span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/PIvdcYzE0UVTBBrdtopirZAKIw6KccW-zcOUZYgDh8yAP7jLxozLq-zkVI2acwz7U9su2zau=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">01:04</span>
+    <span class="author">@ETUDENOTE</span>
+    <span class="text-content"><img class="emoji" src="https://yt3.ggpht.com/0ocqEmuhrKCK87_J21lBkvjW70wRGC32-Buwk6TP4352CgcNjL6ug8zcsel6JiPbE58xhq5g=w48-h48-c-k-nd" alt=":cat-orange-whistling:" title=":cat-orange-whistling:"><img class="emoji" src="https://yt3.ggpht.com/0ocqEmuhrKCK87_J21lBkvjW70wRGC32-Buwk6TP4352CgcNjL6ug8zcsel6JiPbE58xhq5g=w48-h48-c-k-nd" alt=":cat-orange-whistling:" title=":cat-orange-whistling:"></span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/yO7UAFb1yWX88rrlFssfwM-QqL2yu6IdbYtsSi9ZYsyWGhfiBj3vgGx6aVUXUrjfFp7F5K3bXw=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">01:06</span>
+    <span class="author">@사탄의혈육</span>
+    <span class="text-content">엣 호</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/14cGw_5G1XszXBU-1sGYa-ZhMmFhzgPvSV3hvWhrcQ1z3CrUD1fOSMAH-aMXP9JMGi1h4iESRA=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">01:09</span>
+    <span class="author">@Celltrion802</span>
+    <span class="text-content">ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/ytc/AIdro_nLurlmfBbMPywCVBJf5vpyPEHlfhr6OXzXQHm3t540sS0=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">01:10</span>
+    <span class="author">@산야-R</span>
+    <span class="text-content">아니 ㅋㅋㅋㅋ</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/QVEVwxpfOejt5KOGZPEzHE8Bqrr-Hj70JNFpQ01LX9JQnVUPEQ6EgTP6sIqjfkUkZkPOkSgo=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">01:10</span>
+    <span class="author">@체포낙</span>
+    <span class="text-content">아오 몇살이야</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/JsmO1lH04zqHeKxASkWD6YaOKVugAIwqz9OYrYiFXYF-05A73X76P16cA-h3dCrUkFmP36q3ag=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">01:11</span>
+    <span class="author">@창팝용</span>
+    <span class="text-content">엣 호</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/DrwVh7YGNr_UiCTs4CyXowSf9nxU6kmwwLXwy73lJhEr1W9_BZCgXnoU76c8Nldw4zoQ867Lvoc=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">01:11</span>
+    <span class="author">@편초자</span>
+    <span class="text-content">ㅋㅋㅋㅋ</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/Os6e_-QYdawIkasOAYGFvVubVZoPQ1gfk3HcXOq9QdCDDRTKx0IuwNbNRNvyavcwKyOoHRyU=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">01:12</span>
+    <span class="author">@리자예</span>
+    <span class="text-content">ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/38QzfjtBOW4dv4nPvj2g7etzex7E-5MXI5m5pd1LfRx6sTzYXhd0rp9HDOt-0P9oP_b9ZinU=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">01:12</span>
+    <span class="author">@제트스파우스</span>
+    <span class="text-content">ㅋㅋㅋㅋㅋㅋㅋㅋㅋ</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/ICMnCu7c3UPf7RsTeHtBsSzOsiHpyDarfau3929gK9mXWc2yESG__QGwift0Y1vJc2ShwrO-97o=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">01:13</span>
+    <span class="author">@미라크르메이풀</span>
+    <span class="text-content">에구구,,,,</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/KjJVRJ0WKSHTSN8a1KeG-5NAFbTcazxfDHzME7OeABX3tK4RmJkpHT0RMj3eFFnwBTO9oYdU1A=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">01:15</span>
+    <span class="author">@Elmang_Light</span>
+    <span class="text-content">ㅋㅋㅋㅋ</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/06mhTXCdfW7yZfIAA9AdKtm53O3oPHtsQ3KWy4rJMtjm5Xkd9HXl-Xn7DbWSOo5geRrUWFyQ8w=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">01:16</span>
+    <span class="author">@Colrma</span>
+    <span class="text-content">zzzzzz</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/yO7UAFb1yWX88rrlFssfwM-QqL2yu6IdbYtsSi9ZYsyWGhfiBj3vgGx6aVUXUrjfFp7F5K3bXw=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">01:16</span>
+    <span class="author">@사탄의혈육</span>
+    <span class="text-content">항 호</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/wige6O4edxqtO0S0dttP4Vx53js4jbCItiajBjNs8ciTJsgBMvCaO4Sc29xYJhjrA9ZjIcYHUd4=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">01:17</span>
+    <span class="author">@GLAnology</span>
+    <span class="text-content">ㅋㅋㅋㅋㅋ</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/O62eyC_Cta__Cb4Bjqy79QwL7d_hyv-mJLBrBi1unhzuq-ZgjC7wlABTvV8hn_dFMXDxd5O1Ew=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">01:18</span>
+    <span class="author">@ijiboom</span>
+    <span class="text-content">머고이거 ㅋㅋㅋㅋ</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/38QzfjtBOW4dv4nPvj2g7etzex7E-5MXI5m5pd1LfRx6sTzYXhd0rp9HDOt-0P9oP_b9ZinU=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">01:18</span>
+    <span class="author">@제트스파우스</span>
+    <span class="text-content">아오 홍삼냄새 ㅋㅋㅋㅋㅋ</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/oTzGuaZokaWvZ-LkcLttgtxsGix2P-91nywJF2RFnlZ3YNSSr4f5VSbiMr1W-TXYBPD1IkogZg=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">01:20</span>
+    <span class="author">@발라리안한모금</span>
+    <span class="text-content">ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ </span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/DrwVh7YGNr_UiCTs4CyXowSf9nxU6kmwwLXwy73lJhEr1W9_BZCgXnoU76c8Nldw4zoQ867Lvoc=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">01:22</span>
+    <span class="author">@편초자</span>
+    <span class="text-content">얼탱</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/yO7UAFb1yWX88rrlFssfwM-QqL2yu6IdbYtsSi9ZYsyWGhfiBj3vgGx6aVUXUrjfFp7F5K3bXw=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">01:26</span>
+    <span class="author">@사탄의혈육</span>
+    <span class="text-content">아싸 좋구나~</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/wige6O4edxqtO0S0dttP4Vx53js4jbCItiajBjNs8ciTJsgBMvCaO4Sc29xYJhjrA9ZjIcYHUd4=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">01:26</span>
+    <span class="author">@GLAnology</span>
+    <span class="text-content">-틀-</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/14cGw_5G1XszXBU-1sGYa-ZhMmFhzgPvSV3hvWhrcQ1z3CrUD1fOSMAH-aMXP9JMGi1h4iESRA=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">01:26</span>
+    <span class="author">@Celltrion802</span>
+    <span class="text-content">얼 탱</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/V9I-EfI0AsZr5pEL61Q-2q6E5KBcNwinlwZ4PIeOtPwdQ_r4gSsnS0eKjaZmjfvsa6JG7k2tHXw=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">01:27</span>
+    <span class="author">@이단아</span>
+    <span class="text-content">아오ㅓ ㅋㅋㅋㅋ</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/JsmO1lH04zqHeKxASkWD6YaOKVugAIwqz9OYrYiFXYF-05A73X76P16cA-h3dCrUkFmP36q3ag=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">01:28</span>
+    <span class="author">@창팝용</span>
+    <span class="text-content">ㅋㅋㅋㅋㅋㅋㅋ</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/O62eyC_Cta__Cb4Bjqy79QwL7d_hyv-mJLBrBi1unhzuq-ZgjC7wlABTvV8hn_dFMXDxd5O1Ew=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">01:29</span>
+    <span class="author">@ijiboom</span>
+    <span class="text-content">기간제축제네 ㅋㅋㅋㅋ</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/ytc/AIdro_nLurlmfBbMPywCVBJf5vpyPEHlfhr6OXzXQHm3t540sS0=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">01:30</span>
+    <span class="author">@산야-R</span>
+    <span class="text-content">아니 근데 왜 잘어울림?</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/ytc/AIdro_nLurlmfBbMPywCVBJf5vpyPEHlfhr6OXzXQHm3t540sS0=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">01:31</span>
+    <span class="author">@산야-R</span>
+    <span class="text-content">얼탱</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/3VoS8h9a-JQHFs7XS7L0samdAp0C0oIBBwN306EE8gsf4wZtiXUgsJt9QFCzJEZiCtnAeWOt=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">01:32</span>
+    <span class="author">@도사의길</span>
+    <span class="text-content">뽕짝 뮤ㅓ야</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/ICMnCu7c3UPf7RsTeHtBsSzOsiHpyDarfau3929gK9mXWc2yESG__QGwift0Y1vJc2ShwrO-97o=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">01:34</span>
+    <span class="author">@미라크르메이풀</span>
+    <span class="text-content">날씨가.부쩍,,,추워졌읍니다...</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/qXXHwGgWBczOX8yeSdRkbT6edScNjewHYonDnGCf97hKjAAqyQsew5I4jo6Fj-eAM4cHv9lzqg=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">01:34</span>
+    <span class="author">@산토스도스</span>
+    <span class="text-content">얼탱</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/QVEVwxpfOejt5KOGZPEzHE8Bqrr-Hj70JNFpQ01LX9JQnVUPEQ6EgTP6sIqjfkUkZkPOkSgo=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">01:37</span>
+    <span class="author">@체포낙</span>
+    <span class="text-content">ㅋㅋㅋㅋ</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/JsmO1lH04zqHeKxASkWD6YaOKVugAIwqz9OYrYiFXYF-05A73X76P16cA-h3dCrUkFmP36q3ag=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">01:40</span>
+    <span class="author">@창팝용</span>
+    <span class="text-content">얼 탱</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/wige6O4edxqtO0S0dttP4Vx53js4jbCItiajBjNs8ciTJsgBMvCaO4Sc29xYJhjrA9ZjIcYHUd4=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">01:43</span>
+    <span class="author">@GLAnology</span>
+    <span class="text-content">ㅋㅋㅋㅋㅋㅋㅋㅋㅋ</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/V9I-EfI0AsZr5pEL61Q-2q6E5KBcNwinlwZ4PIeOtPwdQ_r4gSsnS0eKjaZmjfvsa6JG7k2tHXw=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">01:45</span>
+    <span class="author">@이단아</span>
+    <span class="text-content">진짜 그 휴게소가면 파는 씨디 틀어준는 그거같음</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/oTzGuaZokaWvZ-LkcLttgtxsGix2P-91nywJF2RFnlZ3YNSSr4f5VSbiMr1W-TXYBPD1IkogZg=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">01:46</span>
+    <span class="author">@발라리안한모금</span>
+    <span class="text-content">ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ </span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/DrwVh7YGNr_UiCTs4CyXowSf9nxU6kmwwLXwy73lJhEr1W9_BZCgXnoU76c8Nldw4zoQ867Lvoc=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">01:48</span>
+    <span class="author">@편초자</span>
+    <span class="text-content">ㅋㅋㅋ</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/38QzfjtBOW4dv4nPvj2g7etzex7E-5MXI5m5pd1LfRx6sTzYXhd0rp9HDOt-0P9oP_b9ZinU=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">01:49</span>
+    <span class="author">@제트스파우스</span>
+    <span class="text-content">ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/DrwVh7YGNr_UiCTs4CyXowSf9nxU6kmwwLXwy73lJhEr1W9_BZCgXnoU76c8Nldw4zoQ867Lvoc=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">01:51</span>
+    <span class="author">@편초자</span>
+    <span class="text-content">지만</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/Os6e_-QYdawIkasOAYGFvVubVZoPQ1gfk3HcXOq9QdCDDRTKx0IuwNbNRNvyavcwKyOoHRyU=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">01:54</span>
+    <span class="author">@리자예</span>
+    <span class="text-content">개사기장르 ㅋㅋㅋ</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/MgZ-URUMO_2GqxLVnyQOH-fF7gWxe8kYZ3zGOI4ZPTApjQo-uT61lH51WMabZUlNyFHBq_k4=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">01:55</span>
+    <span class="author">@릴창섭</span>
+    <span class="text-content"><img class="emoji" src="https://fonts.gstatic.com/s/e/notoemoji/15.1/1f923/72.png" alt=":rolling_on_the_floor_laughing:" title=":rolling_on_the_floor_laughing:"></span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/KjJVRJ0WKSHTSN8a1KeG-5NAFbTcazxfDHzME7OeABX3tK4RmJkpHT0RMj3eFFnwBTO9oYdU1A=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">01:57</span>
+    <span class="author">@Elmang_Light</span>
+    <span class="text-content">ㅋㅋㅋㅋㅋㅋ</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/JsmO1lH04zqHeKxASkWD6YaOKVugAIwqz9OYrYiFXYF-05A73X76P16cA-h3dCrUkFmP36q3ag=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">01:57</span>
+    <span class="author">@창팝용</span>
+    <span class="text-content">오 천 플 마 단</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/38QzfjtBOW4dv4nPvj2g7etzex7E-5MXI5m5pd1LfRx6sTzYXhd0rp9HDOt-0P9oP_b9ZinU=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">01:57</span>
+    <span class="author">@제트스파우스</span>
+    <span class="text-content">매 출 하 락</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/Ba-D0fbSb-sbvAv7FSEbUc0hd7-PAvhaO_nufRVERjgx9vpzqjwZIFAUdGTIehWE83f6Zf0y=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">01:58</span>
+    <span class="author">@테일로</span>
+    <span class="text-content">혼자서 5개 제출하심</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/ytc/AIdro_nLurlmfBbMPywCVBJf5vpyPEHlfhr6OXzXQHm3t540sS0=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">02:01</span>
+    <span class="author">@산야-R</span>
+    <span class="text-content">샤웃</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/JsmO1lH04zqHeKxASkWD6YaOKVugAIwqz9OYrYiFXYF-05A73X76P16cA-h3dCrUkFmP36q3ag=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">02:02</span>
+    <span class="author">@창팝용</span>
+    <span class="text-content">ㅋㅋㅋㅋㅋㅋㅋ</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/38QzfjtBOW4dv4nPvj2g7etzex7E-5MXI5m5pd1LfRx6sTzYXhd0rp9HDOt-0P9oP_b9ZinU=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">02:02</span>
+    <span class="author">@제트스파우스</span>
+    <span class="text-content">밸런스패치 샤웃!</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/oTzGuaZokaWvZ-LkcLttgtxsGix2P-91nywJF2RFnlZ3YNSSr4f5VSbiMr1W-TXYBPD1IkogZg=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">02:09</span>
+    <span class="author">@발라리안한모금</span>
+    <span class="text-content">오</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/ytc/AIdro_nLurlmfBbMPywCVBJf5vpyPEHlfhr6OXzXQHm3t540sS0=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">02:10</span>
+    <span class="author">@산야-R</span>
+    <span class="text-content">이거 국악이네</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/JsmO1lH04zqHeKxASkWD6YaOKVugAIwqz9OYrYiFXYF-05A73X76P16cA-h3dCrUkFmP36q3ag=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">02:11</span>
+    <span class="author">@창팝용</span>
+    <span class="text-content">혼자 통나무 뭐3</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/ICMnCu7c3UPf7RsTeHtBsSzOsiHpyDarfau3929gK9mXWc2yESG__QGwift0Y1vJc2ShwrO-97o=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">02:12</span>
+    <span class="author">@미라크르메이풀</span>
+    <span class="text-content">이건 무슨 장르여</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/14cGw_5G1XszXBU-1sGYa-ZhMmFhzgPvSV3hvWhrcQ1z3CrUD1fOSMAH-aMXP9JMGi1h4iESRA=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">02:13</span>
+    <span class="author">@Celltrion802</span>
+    <span class="text-content">ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/O62eyC_Cta__Cb4Bjqy79QwL7d_hyv-mJLBrBi1unhzuq-ZgjC7wlABTvV8hn_dFMXDxd5O1Ew=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">02:13</span>
+    <span class="author">@ijiboom</span>
+    <span class="text-content">오</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/QVEVwxpfOejt5KOGZPEzHE8Bqrr-Hj70JNFpQ01LX9JQnVUPEQ6EgTP6sIqjfkUkZkPOkSgo=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">02:17</span>
+    <span class="author">@체포낙</span>
+    <span class="text-content">아 ㅋㅋ 신곡으로 내라고</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/-J51Y4uDrPgwMNDnjMy-v6jIe4mI-FDX_adzWEFH0VboRzHVVw9VoVH7K9h_uu_5SKWTLouHSzo=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">02:23</span>
+    <span class="author">@하얀_까망</span>
+    <span class="text-content">배~고파~</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/JsmO1lH04zqHeKxASkWD6YaOKVugAIwqz9OYrYiFXYF-05A73X76P16cA-h3dCrUkFmP36q3ag=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">02:24</span>
+    <span class="author">@창팝용</span>
+    <span class="text-content">이건 뭐야</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/ytc/AIdro_ntLLnhsaIcV5UPLGebSgBUUsebhLcEYno_1EeVTCZ6Kg=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">02:26</span>
+    <span class="author">@김태영-m7v</span>
+    <span class="text-content"><img class="emoji" src="https://yt3.ggpht.com/DTR9bZd1HOqpRJyz9TKiLb0cqe5Hb84Yi_79A6LWlN1tY-5kXqLDXRmtYVKE9rcqzEghmw=w48-h48-c-k-nd" alt=":elbowcough:" title=":elbowcough:"></span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/38QzfjtBOW4dv4nPvj2g7etzex7E-5MXI5m5pd1LfRx6sTzYXhd0rp9HDOt-0P9oP_b9ZinU=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">02:26</span>
+    <span class="author">@제트스파우스</span>
+    <span class="text-content">이런건 신곡으로 내라 ㅋㅋㅋ</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/KjJVRJ0WKSHTSN8a1KeG-5NAFbTcazxfDHzME7OeABX3tK4RmJkpHT0RMj3eFFnwBTO9oYdU1A=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">02:28</span>
+    <span class="author">@Elmang_Light</span>
+    <span class="text-content">ㅋㅋㅋㅋ</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/oTzGuaZokaWvZ-LkcLttgtxsGix2P-91nywJF2RFnlZ3YNSSr4f5VSbiMr1W-TXYBPD1IkogZg=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">02:36</span>
+    <span class="author">@발라리안한모금</span>
+    <span class="text-content">ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ </span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/QVEVwxpfOejt5KOGZPEzHE8Bqrr-Hj70JNFpQ01LX9JQnVUPEQ6EgTP6sIqjfkUkZkPOkSgo=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">02:36</span>
+    <span class="author">@체포낙</span>
+    <span class="text-content">이건 무슨 장르지</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/DrwVh7YGNr_UiCTs4CyXowSf9nxU6kmwwLXwy73lJhEr1W9_BZCgXnoU76c8Nldw4zoQ867Lvoc=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">02:37</span>
+    <span class="author">@편초자</span>
+    <span class="text-content">ㅋㅋㅋㅋㅋ</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/38QzfjtBOW4dv4nPvj2g7etzex7E-5MXI5m5pd1LfRx6sTzYXhd0rp9HDOt-0P9oP_b9ZinU=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">02:40</span>
+    <span class="author">@제트스파우스</span>
+    <span class="text-content">아오 메들리로 쪄왔네 ㅋㅋㅋㅋ</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/DrwVh7YGNr_UiCTs4CyXowSf9nxU6kmwwLXwy73lJhEr1W9_BZCgXnoU76c8Nldw4zoQ867Lvoc=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">02:41</span>
+    <span class="author">@편초자</span>
+    <span class="text-content">혼자5개는</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/qXXHwGgWBczOX8yeSdRkbT6edScNjewHYonDnGCf97hKjAAqyQsew5I4jo6Fj-eAM4cHv9lzqg=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">02:46</span>
+    <span class="author">@산토스도스</span>
+    <span class="text-content">아니 뒤에도 뽑으셨을 거 아님</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/qXXHwGgWBczOX8yeSdRkbT6edScNjewHYonDnGCf97hKjAAqyQsew5I4jo6Fj-eAM4cHv9lzqg=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">02:49</span>
+    <span class="author">@산토스도스</span>
+    <span class="text-content">풀로 내줘 ㅋㅋㅋㅋㅋㅋ</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/ICMnCu7c3UPf7RsTeHtBsSzOsiHpyDarfau3929gK9mXWc2yESG__QGwift0Y1vJc2ShwrO-97o=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">02:50</span>
+    <span class="author">@미라크르메이풀</span>
+    <span class="text-content">남자 K-POP에서 자주 들리는 그건데</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/yO7UAFb1yWX88rrlFssfwM-QqL2yu6IdbYtsSi9ZYsyWGhfiBj3vgGx6aVUXUrjfFp7F5K3bXw=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">02:52</span>
+    <span class="author">@사탄의혈육</span>
+    <span class="text-content">혼자 5개는ㅋㅋㅋㅋ</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/ytc/AIdro_nLurlmfBbMPywCVBJf5vpyPEHlfhr6OXzXQHm3t540sS0=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">02:54</span>
+    <span class="author">@산야-R</span>
+    <span class="text-content">대회도 통나무는 뭐냐고~</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/wige6O4edxqtO0S0dttP4Vx53js4jbCItiajBjNs8ciTJsgBMvCaO4Sc29xYJhjrA9ZjIcYHUd4=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">02:57</span>
+    <span class="author">@GLAnology</span>
+    <span class="text-content">555550개</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/oTzGuaZokaWvZ-LkcLttgtxsGix2P-91nywJF2RFnlZ3YNSSr4f5VSbiMr1W-TXYBPD1IkogZg=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">02:57</span>
+    <span class="author">@발라리안한모금</span>
+    <span class="text-content">ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ </span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/Ba-D0fbSb-sbvAv7FSEbUc0hd7-PAvhaO_nufRVERjgx9vpzqjwZIFAUdGTIehWE83f6Zf0y=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">03:00</span>
+    <span class="author">@테일로</span>
+    <span class="text-content">풀버전은[더보기]</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/QVEVwxpfOejt5KOGZPEzHE8Bqrr-Hj70JNFpQ01LX9JQnVUPEQ6EgTP6sIqjfkUkZkPOkSgo=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">03:01</span>
+    <span class="author">@체포낙</span>
+    <span class="text-content">아오 ㅋㅋㅋ</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/14cGw_5G1XszXBU-1sGYa-ZhMmFhzgPvSV3hvWhrcQ1z3CrUD1fOSMAH-aMXP9JMGi1h4iESRA=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">03:02</span>
+    <span class="author">@Celltrion802</span>
+    <span class="text-content">ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/ICMnCu7c3UPf7RsTeHtBsSzOsiHpyDarfau3929gK9mXWc2yESG__QGwift0Y1vJc2ShwrO-97o=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">03:03</span>
+    <span class="author">@미라크르메이풀</span>
+    <span class="text-content">ㅋㅋㅋㅋㅋㅋㅋㅋ</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/JsmO1lH04zqHeKxASkWD6YaOKVugAIwqz9OYrYiFXYF-05A73X76P16cA-h3dCrUkFmP36q3ag=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">03:03</span>
+    <span class="author">@창팝용</span>
+    <span class="text-content">통나무 들었다는 거임</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/38QzfjtBOW4dv4nPvj2g7etzex7E-5MXI5m5pd1LfRx6sTzYXhd0rp9HDOt-0P9oP_b9ZinU=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">03:05</span>
+    <span class="author">@제트스파우스</span>
+    <span class="text-content">카ㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏ르마ㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏㅏ</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/DrwVh7YGNr_UiCTs4CyXowSf9nxU6kmwwLXwy73lJhEr1W9_BZCgXnoU76c8Nldw4zoQ867Lvoc=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">03:06</span>
+    <span class="author">@편초자</span>
+    <span class="text-content">ㅋㅋㅋㅋㅋ</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/06mhTXCdfW7yZfIAA9AdKtm53O3oPHtsQ3KWy4rJMtjm5Xkd9HXl-Xn7DbWSOo5geRrUWFyQ8w=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">03:06</span>
+    <span class="author">@Colrma</span>
+    <span class="text-content">ㅋㅋㅋㅋㅋㅋㅋㅋ</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/wige6O4edxqtO0S0dttP4Vx53js4jbCItiajBjNs8ciTJsgBMvCaO4Sc29xYJhjrA9ZjIcYHUd4=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">03:06</span>
+    <span class="author">@GLAnology</span>
+    <span class="text-content">ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/KjJVRJ0WKSHTSN8a1KeG-5NAFbTcazxfDHzME7OeABX3tK4RmJkpHT0RMj3eFFnwBTO9oYdU1A=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">03:08</span>
+    <span class="author">@Elmang_Light</span>
+    <span class="text-content">ㅋㅋㅋㅋ</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/oTzGuaZokaWvZ-LkcLttgtxsGix2P-91nywJF2RFnlZ3YNSSr4f5VSbiMr1W-TXYBPD1IkogZg=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">03:08</span>
+    <span class="author">@발라리안한모금</span>
+    <span class="text-content">ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ </span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/14cGw_5G1XszXBU-1sGYa-ZhMmFhzgPvSV3hvWhrcQ1z3CrUD1fOSMAH-aMXP9JMGi1h4iESRA=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">03:12</span>
+    <span class="author">@Celltrion802</span>
+    <span class="text-content">이 사람 밥먹고 창팝만 만드나봐</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/JsmO1lH04zqHeKxASkWD6YaOKVugAIwqz9OYrYiFXYF-05A73X76P16cA-h3dCrUkFmP36q3ag=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">03:16</span>
+    <span class="author">@창팝용</span>
+    <span class="text-content">ㅋㅋㅋㅋㅋㅋㅋㅋ</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/yO7UAFb1yWX88rrlFssfwM-QqL2yu6IdbYtsSi9ZYsyWGhfiBj3vgGx6aVUXUrjfFp7F5K3bXw=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">03:18</span>
+    <span class="author">@사탄의혈육</span>
+    <span class="text-content">ㅋㅋㅋㅋㅋㅋㅋㅋㅋ</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/QVEVwxpfOejt5KOGZPEzHE8Bqrr-Hj70JNFpQ01LX9JQnVUPEQ6EgTP6sIqjfkUkZkPOkSgo=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">03:19</span>
+    <span class="author">@체포낙</span>
+    <span class="text-content">미쳤네 ㅋㅋㅋ</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/3VoS8h9a-JQHFs7XS7L0samdAp0C0oIBBwN306EE8gsf4wZtiXUgsJt9QFCzJEZiCtnAeWOt=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">03:20</span>
+    <span class="author">@도사의길</span>
+    <span class="text-content"><img class="emoji" src="https://yt3.ggpht.com/cktIaPxFwnrPwn-alHvnvedHLUJwbHi8HCK3AgbHpphrMAW99qw0bDfxuZagSY5ieE9BBrA=w48-h48-c-k-nd" alt=":face-blue-smiling:" title=":face-blue-smiling:"></span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/ytc/AIdro_nLurlmfBbMPywCVBJf5vpyPEHlfhr6OXzXQHm3t540sS0=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">03:21</span>
+    <span class="author">@산야-R</span>
+    <span class="text-content">영어인데 트로트 느낌이라니</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/JsmO1lH04zqHeKxASkWD6YaOKVugAIwqz9OYrYiFXYF-05A73X76P16cA-h3dCrUkFmP36q3ag=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">03:22</span>
+    <span class="author">@창팝용</span>
+    <span class="text-content">카ㄹㄹㄹㄹㄹㄹ마</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/38QzfjtBOW4dv4nPvj2g7etzex7E-5MXI5m5pd1LfRx6sTzYXhd0rp9HDOt-0P9oP_b9ZinU=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">03:24</span>
+    <span class="author">@제트스파우스</span>
+    <span class="text-content">리믹스 미쳤다</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/MgZ-URUMO_2GqxLVnyQOH-fF7gWxe8kYZ3zGOI4ZPTApjQo-uT61lH51WMabZUlNyFHBq_k4=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">03:24</span>
+    <span class="author">@릴창섭</span>
+    <span class="text-content"><img class="emoji" src="https://fonts.gstatic.com/s/e/notoemoji/15.1/1f602/72.png" alt=":face_with_tears_of_joy:" title=":face_with_tears_of_joy:"></span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/38QzfjtBOW4dv4nPvj2g7etzex7E-5MXI5m5pd1LfRx6sTzYXhd0rp9HDOt-0P9oP_b9ZinU=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">03:32</span>
+    <span class="author">@제트스파우스</span>
+    <span class="text-content">ㅋㅋㅋㅋㅋㅋㅋ</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/oTzGuaZokaWvZ-LkcLttgtxsGix2P-91nywJF2RFnlZ3YNSSr4f5VSbiMr1W-TXYBPD1IkogZg=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">03:34</span>
+    <span class="author">@발라리안한모금</span>
+    <span class="text-content">ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ </span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/KjJVRJ0WKSHTSN8a1KeG-5NAFbTcazxfDHzME7OeABX3tK4RmJkpHT0RMj3eFFnwBTO9oYdU1A=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">03:36</span>
+    <span class="author">@Elmang_Light</span>
+    <span class="text-content">ㅋㅋㅋㅋㅋ</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/38QzfjtBOW4dv4nPvj2g7etzex7E-5MXI5m5pd1LfRx6sTzYXhd0rp9HDOt-0P9oP_b9ZinU=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">03:38</span>
+    <span class="author">@제트스파우스</span>
+    <span class="text-content">수노수노야...</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/QVEVwxpfOejt5KOGZPEzHE8Bqrr-Hj70JNFpQ01LX9JQnVUPEQ6EgTP6sIqjfkUkZkPOkSgo=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">03:38</span>
+    <span class="author">@체포낙</span>
+    <span class="text-content">대 수 노</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/oTzGuaZokaWvZ-LkcLttgtxsGix2P-91nywJF2RFnlZ3YNSSr4f5VSbiMr1W-TXYBPD1IkogZg=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">03:39</span>
+    <span class="author">@발라리안한모금</span>
+    <span class="text-content">쌔다쌔 수노햄</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/14cGw_5G1XszXBU-1sGYa-ZhMmFhzgPvSV3hvWhrcQ1z3CrUD1fOSMAH-aMXP9JMGi1h4iESRA=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">03:41</span>
+    <span class="author">@Celltrion802</span>
+    <span class="text-content">ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/ICMnCu7c3UPf7RsTeHtBsSzOsiHpyDarfau3929gK9mXWc2yESG__QGwift0Y1vJc2ShwrO-97o=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">03:42</span>
+    <span class="author">@미라크르메이풀</span>
+    <span class="text-content">억까 아니잖아 이색히야</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/38QzfjtBOW4dv4nPvj2g7etzex7E-5MXI5m5pd1LfRx6sTzYXhd0rp9HDOt-0P9oP_b9ZinU=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">03:43</span>
+    <span class="author">@제트스파우스</span>
+    <span class="text-content">대 수 노</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/DrwVh7YGNr_UiCTs4CyXowSf9nxU6kmwwLXwy73lJhEr1W9_BZCgXnoU76c8Nldw4zoQ867Lvoc=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">03:43</span>
+    <span class="author">@편초자</span>
+    <span class="text-content"><img class="emoji" src="https://yt3.ggpht.com/DTR9bZd1HOqpRJyz9TKiLb0cqe5Hb84Yi_79A6LWlN1tY-5kXqLDXRmtYVKE9rcqzEghmw=w48-h48-c-k-nd" alt=":elbowcough:" title=":elbowcough:"></span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/qXXHwGgWBczOX8yeSdRkbT6edScNjewHYonDnGCf97hKjAAqyQsew5I4jo6Fj-eAM4cHv9lzqg=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">03:43</span>
+    <span class="author">@산토스도스</span>
+    <span class="text-content">수 윙 스</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/JsmO1lH04zqHeKxASkWD6YaOKVugAIwqz9OYrYiFXYF-05A73X76P16cA-h3dCrUkFmP36q3ag=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">03:46</span>
+    <span class="author">@창팝용</span>
+    <span class="text-content">수노수노야</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/PIvdcYzE0UVTBBrdtopirZAKIw6KccW-zcOUZYgDh8yAP7jLxozLq-zkVI2acwz7U9su2zau=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">03:48</span>
+    <span class="author">@ETUDENOTE</span>
+    <span class="text-content">가래나 뱉고 얘기해라 </span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/QVEVwxpfOejt5KOGZPEzHE8Bqrr-Hj70JNFpQ01LX9JQnVUPEQ6EgTP6sIqjfkUkZkPOkSgo=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">03:51</span>
+    <span class="author">@체포낙</span>
+    <span class="text-content">우타우요? 유디오</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/Tr_UIJhQWRrp2Trpzn0clVyb7XuAILXFkBPpimGB9bf8ZTXiL30to4eYi1GNWE_lIWItKZhdJg=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">03:54</span>
+    <span class="author">@goldencageHamster</span>
+    <span class="text-content">떅 수노 네이놈</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/MgZ-URUMO_2GqxLVnyQOH-fF7gWxe8kYZ3zGOI4ZPTApjQo-uT61lH51WMabZUlNyFHBq_k4=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">03:57</span>
+    <span class="author">@릴창섭</span>
+    <span class="text-content"><img class="emoji" src="https://fonts.gstatic.com/s/e/notoemoji/15.1/1f621/72.png" alt=":pouting_face:" title=":pouting_face:"></span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/ytc/AIdro_nLurlmfBbMPywCVBJf5vpyPEHlfhr6OXzXQHm3t540sS0=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">03:57</span>
+    <span class="author">@산야-R</span>
+    <span class="text-content">UDIO로 꺼지라고는 안하네</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/JsmO1lH04zqHeKxASkWD6YaOKVugAIwqz9OYrYiFXYF-05A73X76P16cA-h3dCrUkFmP36q3ag=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">04:01</span>
+    <span class="author">@창팝용</span>
+    <span class="text-content">방언 그만해 수노려나</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/ICMnCu7c3UPf7RsTeHtBsSzOsiHpyDarfau3929gK9mXWc2yESG__QGwift0Y1vJc2ShwrO-97o=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">04:03</span>
+    <span class="author">@미라크르메이풀</span>
+    <span class="text-content">유디오 견제하네</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/QVEVwxpfOejt5KOGZPEzHE8Bqrr-Hj70JNFpQ01LX9JQnVUPEQ6EgTP6sIqjfkUkZkPOkSgo=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">04:07</span>
+    <span class="author">@체포낙</span>
+    <span class="text-content">바로 서사 나오네</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/14cGw_5G1XszXBU-1sGYa-ZhMmFhzgPvSV3hvWhrcQ1z3CrUD1fOSMAH-aMXP9JMGi1h4iESRA=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">04:07</span>
+    <span class="author">@Celltrion802</span>
+    <span class="text-content">ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/38QzfjtBOW4dv4nPvj2g7etzex7E-5MXI5m5pd1LfRx6sTzYXhd0rp9HDOt-0P9oP_b9ZinU=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">04:08</span>
+    <span class="author">@제트스파우스</span>
+    <span class="text-content">ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/qXXHwGgWBczOX8yeSdRkbT6edScNjewHYonDnGCf97hKjAAqyQsew5I4jo6Fj-eAM4cHv9lzqg=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">04:08</span>
+    <span class="author">@산토스도스</span>
+    <span class="text-content">아오 템플런</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/JsmO1lH04zqHeKxASkWD6YaOKVugAIwqz9OYrYiFXYF-05A73X76P16cA-h3dCrUkFmP36q3ag=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">04:10</span>
+    <span class="author">@창팝용</span>
+    <span class="text-content">유디오는 취급도 안하네</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/KjJVRJ0WKSHTSN8a1KeG-5NAFbTcazxfDHzME7OeABX3tK4RmJkpHT0RMj3eFFnwBTO9oYdU1A=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">04:11</span>
+    <span class="author">@Elmang_Light</span>
+    <span class="text-content">ㅋㅋㅋㅋ</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/oTzGuaZokaWvZ-LkcLttgtxsGix2P-91nywJF2RFnlZ3YNSSr4f5VSbiMr1W-TXYBPD1IkogZg=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">04:12</span>
+    <span class="author">@발라리안한모금</span>
+    <span class="text-content">ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ </span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/O62eyC_Cta__Cb4Bjqy79QwL7d_hyv-mJLBrBi1unhzuq-ZgjC7wlABTvV8hn_dFMXDxd5O1Ew=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">04:12</span>
+    <span class="author">@ijiboom</span>
+    <span class="text-content">ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/ICMnCu7c3UPf7RsTeHtBsSzOsiHpyDarfau3929gK9mXWc2yESG__QGwift0Y1vJc2ShwrO-97o=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">04:14</span>
+    <span class="author">@미라크르메이풀</span>
+    <span class="text-content">아오</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/38QzfjtBOW4dv4nPvj2g7etzex7E-5MXI5m5pd1LfRx6sTzYXhd0rp9HDOt-0P9oP_b9ZinU=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">04:14</span>
+    <span class="author">@제트스파우스</span>
+    <span class="text-content">바로 템플릿 박아버리네</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/yO7UAFb1yWX88rrlFssfwM-QqL2yu6IdbYtsSi9ZYsyWGhfiBj3vgGx6aVUXUrjfFp7F5K3bXw=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">04:18</span>
+    <span class="author">@사탄의혈육</span>
+    <span class="text-content">ㅋㅋㅋㅋㅋㅋ</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/QVEVwxpfOejt5KOGZPEzHE8Bqrr-Hj70JNFpQ01LX9JQnVUPEQ6EgTP6sIqjfkUkZkPOkSgo=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">04:19</span>
+    <span class="author">@체포낙</span>
+    <span class="text-content">수노가 이래서..</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/DrwVh7YGNr_UiCTs4CyXowSf9nxU6kmwwLXwy73lJhEr1W9_BZCgXnoU76c8Nldw4zoQ867Lvoc=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">04:19</span>
+    <span class="author">@편초자</span>
+    <span class="text-content">ㅋㅋㅋㅋㅋㅋ</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/Tr_UIJhQWRrp2Trpzn0clVyb7XuAILXFkBPpimGB9bf8ZTXiL30to4eYi1GNWE_lIWItKZhdJg=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">04:19</span>
+    <span class="author">@goldencageHamster</span>
+    <span class="text-content">완장!</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/JsmO1lH04zqHeKxASkWD6YaOKVugAIwqz9OYrYiFXYF-05A73X76P16cA-h3dCrUkFmP36q3ag=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">04:25</span>
+    <span class="author">@창팝용</span>
+    <span class="text-content">완장!</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/ytc/AIdro_nLurlmfBbMPywCVBJf5vpyPEHlfhr6OXzXQHm3t540sS0=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">04:28</span>
+    <span class="author">@산야-R</span>
+    <span class="text-content">완장!</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/38QzfjtBOW4dv4nPvj2g7etzex7E-5MXI5m5pd1LfRx6sTzYXhd0rp9HDOt-0P9oP_b9ZinU=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">04:30</span>
+    <span class="author">@제트스파우스</span>
+    <span class="text-content">수노가 노이즈 심한 이유 뭔지 알거같음</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/JsmO1lH04zqHeKxASkWD6YaOKVugAIwqz9OYrYiFXYF-05A73X76P16cA-h3dCrUkFmP36q3ag=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">04:35</span>
+    <span class="author">@창팝용</span>
+    <span class="text-content">풀버전 오늘 올렸다는 거임</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/oTzGuaZokaWvZ-LkcLttgtxsGix2P-91nywJF2RFnlZ3YNSSr4f5VSbiMr1W-TXYBPD1IkogZg=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">04:35</span>
+    <span class="author">@발라리안한모금</span>
+    <span class="text-content">완장!</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/QVEVwxpfOejt5KOGZPEzHE8Bqrr-Hj70JNFpQ01LX9JQnVUPEQ6EgTP6sIqjfkUkZkPOkSgo=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">04:37</span>
+    <span class="author">@체포낙</span>
+    <span class="text-content">힙슝좍 개사기네</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/qXXHwGgWBczOX8yeSdRkbT6edScNjewHYonDnGCf97hKjAAqyQsew5I4jo6Fj-eAM4cHv9lzqg=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">04:47</span>
+    <span class="author">@산토스도스</span>
+    <span class="text-content"><img class="emoji" src="https://yt3.ggpht.com/EnDBiuksboKsLkxp_CqMWlTcZtlL77QBkbjz_rLedMSDzrHmy_6k44YWFy2rk4I0LG6K2KI=w48-h48-c-k-nd" alt=":glasses-purple-yellow-diamond:" title=":glasses-purple-yellow-diamond:"></span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/oTzGuaZokaWvZ-LkcLttgtxsGix2P-91nywJF2RFnlZ3YNSSr4f5VSbiMr1W-TXYBPD1IkogZg=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">04:49</span>
+    <span class="author">@발라리안한모금</span>
+    <span class="text-content">힙슝좍 개사기네</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/MgZ-URUMO_2GqxLVnyQOH-fF7gWxe8kYZ3zGOI4ZPTApjQo-uT61lH51WMabZUlNyFHBq_k4=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">04:51</span>
+    <span class="author">@릴창섭</span>
+    <span class="text-content"><img class="emoji" src="https://fonts.gstatic.com/s/e/notoemoji/15.1/1f60e/72.png" alt=":smiling_face_with_sunglasses:" title=":smiling_face_with_sunglasses:"></span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/KjJVRJ0WKSHTSN8a1KeG-5NAFbTcazxfDHzME7OeABX3tK4RmJkpHT0RMj3eFFnwBTO9oYdU1A=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">04:51</span>
+    <span class="author">@Elmang_Light</span>
+    <span class="text-content">캬</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/JsmO1lH04zqHeKxASkWD6YaOKVugAIwqz9OYrYiFXYF-05A73X76P16cA-h3dCrUkFmP36q3ag=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">04:53</span>
+    <span class="author">@창팝용</span>
+    <span class="text-content"><img class="emoji" src="https://yt3.ggpht.com/DTR9bZd1HOqpRJyz9TKiLb0cqe5Hb84Yi_79A6LWlN1tY-5kXqLDXRmtYVKE9rcqzEghmw=w48-h48-c-k-nd" alt=":elbowcough:" title=":elbowcough:"><img class="emoji" src="https://yt3.ggpht.com/DTR9bZd1HOqpRJyz9TKiLb0cqe5Hb84Yi_79A6LWlN1tY-5kXqLDXRmtYVKE9rcqzEghmw=w48-h48-c-k-nd" alt=":elbowcough:" title=":elbowcough:"><img class="emoji" src="https://yt3.ggpht.com/DTR9bZd1HOqpRJyz9TKiLb0cqe5Hb84Yi_79A6LWlN1tY-5kXqLDXRmtYVKE9rcqzEghmw=w48-h48-c-k-nd" alt=":elbowcough:" title=":elbowcough:"></span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/38QzfjtBOW4dv4nPvj2g7etzex7E-5MXI5m5pd1LfRx6sTzYXhd0rp9HDOt-0P9oP_b9ZinU=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">04:54</span>
+    <span class="author">@제트스파우스</span>
+    <span class="text-content">캬~</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/Os6e_-QYdawIkasOAYGFvVubVZoPQ1gfk3HcXOq9QdCDDRTKx0IuwNbNRNvyavcwKyOoHRyU=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">04:57</span>
+    <span class="author">@리자예</span>
+    <span class="text-content"><img class="emoji" src="https://yt3.ggpht.com/DTR9bZd1HOqpRJyz9TKiLb0cqe5Hb84Yi_79A6LWlN1tY-5kXqLDXRmtYVKE9rcqzEghmw=w48-h48-c-k-nd" alt=":elbowcough:" title=":elbowcough:"></span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/ytc/AIdro_nLurlmfBbMPywCVBJf5vpyPEHlfhr6OXzXQHm3t540sS0=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">04:59</span>
+    <span class="author">@산야-R</span>
+    <span class="text-content">좋다</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/06mhTXCdfW7yZfIAA9AdKtm53O3oPHtsQ3KWy4rJMtjm5Xkd9HXl-Xn7DbWSOo5geRrUWFyQ8w=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">05:03</span>
+    <span class="author">@Colrma</span>
+    <span class="text-content"><img class="emoji" src="https://yt3.ggpht.com/EnDBiuksboKsLkxp_CqMWlTcZtlL77QBkbjz_rLedMSDzrHmy_6k44YWFy2rk4I0LG6K2KI=w48-h48-c-k-nd" alt=":glasses-purple-yellow-diamond:" title=":glasses-purple-yellow-diamond:"></span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/JsmO1lH04zqHeKxASkWD6YaOKVugAIwqz9OYrYiFXYF-05A73X76P16cA-h3dCrUkFmP36q3ag=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">05:03</span>
+    <span class="author">@창팝용</span>
+    <span class="text-content">캬</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/14cGw_5G1XszXBU-1sGYa-ZhMmFhzgPvSV3hvWhrcQ1z3CrUD1fOSMAH-aMXP9JMGi1h4iESRA=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">05:04</span>
+    <span class="author">@Celltrion802</span>
+    <span class="text-content"><img class="emoji" src="https://yt3.ggpht.com/DTR9bZd1HOqpRJyz9TKiLb0cqe5Hb84Yi_79A6LWlN1tY-5kXqLDXRmtYVKE9rcqzEghmw=w48-h48-c-k-nd" alt=":elbowcough:" title=":elbowcough:"><img class="emoji" src="https://yt3.ggpht.com/DTR9bZd1HOqpRJyz9TKiLb0cqe5Hb84Yi_79A6LWlN1tY-5kXqLDXRmtYVKE9rcqzEghmw=w48-h48-c-k-nd" alt=":elbowcough:" title=":elbowcough:"><img class="emoji" src="https://yt3.ggpht.com/DTR9bZd1HOqpRJyz9TKiLb0cqe5Hb84Yi_79A6LWlN1tY-5kXqLDXRmtYVKE9rcqzEghmw=w48-h48-c-k-nd" alt=":elbowcough:" title=":elbowcough:"></span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/QVEVwxpfOejt5KOGZPEzHE8Bqrr-Hj70JNFpQ01LX9JQnVUPEQ6EgTP6sIqjfkUkZkPOkSgo=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">05:12</span>
+    <span class="author">@체포낙</span>
+    <span class="text-content">캬 힙슝좍</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/oTzGuaZokaWvZ-LkcLttgtxsGix2P-91nywJF2RFnlZ3YNSSr4f5VSbiMr1W-TXYBPD1IkogZg=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">05:15</span>
+    <span class="author">@발라리안한모금</span>
+    <span class="text-content">캬</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/38QzfjtBOW4dv4nPvj2g7etzex7E-5MXI5m5pd1LfRx6sTzYXhd0rp9HDOt-0P9oP_b9ZinU=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">05:17</span>
+    <span class="author">@제트스파우스</span>
+    <span class="text-content">캬 힙슝좍</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/wige6O4edxqtO0S0dttP4Vx53js4jbCItiajBjNs8ciTJsgBMvCaO4Sc29xYJhjrA9ZjIcYHUd4=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">05:26</span>
+    <span class="author">@GLAnology</span>
+    <span class="text-content"><img class="emoji" src="https://yt3.ggpht.com/DTR9bZd1HOqpRJyz9TKiLb0cqe5Hb84Yi_79A6LWlN1tY-5kXqLDXRmtYVKE9rcqzEghmw=w48-h48-c-k-nd" alt=":elbowcough:" title=":elbowcough:"><img class="emoji" src="https://yt3.ggpht.com/DTR9bZd1HOqpRJyz9TKiLb0cqe5Hb84Yi_79A6LWlN1tY-5kXqLDXRmtYVKE9rcqzEghmw=w48-h48-c-k-nd" alt=":elbowcough:" title=":elbowcough:"></span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/qXXHwGgWBczOX8yeSdRkbT6edScNjewHYonDnGCf97hKjAAqyQsew5I4jo6Fj-eAM4cHv9lzqg=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">05:27</span>
+    <span class="author">@산토스도스</span>
+    <span class="text-content">힙슝좍의 미래는 밝다</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/JsmO1lH04zqHeKxASkWD6YaOKVugAIwqz9OYrYiFXYF-05A73X76P16cA-h3dCrUkFmP36q3ag=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">05:29</span>
+    <span class="author">@창팝용</span>
+    <span class="text-content">작 업 장</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/06mhTXCdfW7yZfIAA9AdKtm53O3oPHtsQ3KWy4rJMtjm5Xkd9HXl-Xn7DbWSOo5geRrUWFyQ8w=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">05:29</span>
+    <span class="author">@Colrma</span>
+    <span class="text-content"><img class="emoji" src="https://yt3.ggpht.com/EnDBiuksboKsLkxp_CqMWlTcZtlL77QBkbjz_rLedMSDzrHmy_6k44YWFy2rk4I0LG6K2KI=w48-h48-c-k-nd" alt=":glasses-purple-yellow-diamond:" title=":glasses-purple-yellow-diamond:"></span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/Os6e_-QYdawIkasOAYGFvVubVZoPQ1gfk3HcXOq9QdCDDRTKx0IuwNbNRNvyavcwKyOoHRyU=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">05:30</span>
+    <span class="author">@리자예</span>
+    <span class="text-content">캬</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/KjJVRJ0WKSHTSN8a1KeG-5NAFbTcazxfDHzME7OeABX3tK4RmJkpHT0RMj3eFFnwBTO9oYdU1A=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">05:34</span>
+    <span class="author">@Elmang_Light</span>
+    <span class="text-content">캬</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/MgZ-URUMO_2GqxLVnyQOH-fF7gWxe8kYZ3zGOI4ZPTApjQo-uT61lH51WMabZUlNyFHBq_k4=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">05:37</span>
+    <span class="author">@릴창섭</span>
+    <span class="text-content"><img class="emoji" src="https://fonts.gstatic.com/s/e/notoemoji/15.1/1f60e/72.png" alt=":smiling_face_with_sunglasses:" title=":smiling_face_with_sunglasses:"></span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/qXXHwGgWBczOX8yeSdRkbT6edScNjewHYonDnGCf97hKjAAqyQsew5I4jo6Fj-eAM4cHv9lzqg=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">05:39</span>
+    <span class="author">@산토스도스</span>
+    <span class="text-content"><img class="emoji" src="https://yt3.ggpht.com/DTR9bZd1HOqpRJyz9TKiLb0cqe5Hb84Yi_79A6LWlN1tY-5kXqLDXRmtYVKE9rcqzEghmw=w48-h48-c-k-nd" alt=":elbowcough:" title=":elbowcough:"><img class="emoji" src="https://yt3.ggpht.com/DTR9bZd1HOqpRJyz9TKiLb0cqe5Hb84Yi_79A6LWlN1tY-5kXqLDXRmtYVKE9rcqzEghmw=w48-h48-c-k-nd" alt=":elbowcough:" title=":elbowcough:"><img class="emoji" src="https://yt3.ggpht.com/DTR9bZd1HOqpRJyz9TKiLb0cqe5Hb84Yi_79A6LWlN1tY-5kXqLDXRmtYVKE9rcqzEghmw=w48-h48-c-k-nd" alt=":elbowcough:" title=":elbowcough:"></span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/Ba-D0fbSb-sbvAv7FSEbUc0hd7-PAvhaO_nufRVERjgx9vpzqjwZIFAUdGTIehWE83f6Zf0y=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">05:40</span>
+    <span class="author">@테일로</span>
+    <span class="text-content">봐주셔서 감사합니다!</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/JsmO1lH04zqHeKxASkWD6YaOKVugAIwqz9OYrYiFXYF-05A73X76P16cA-h3dCrUkFmP36q3ag=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">05:41</span>
+    <span class="author">@창팝용</span>
+    <span class="text-content">힙슝좍 붐은 온다</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/QVEVwxpfOejt5KOGZPEzHE8Bqrr-Hj70JNFpQ01LX9JQnVUPEQ6EgTP6sIqjfkUkZkPOkSgo=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">05:42</span>
+    <span class="author">@체포낙</span>
+    <span class="text-content">통발이네</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/38QzfjtBOW4dv4nPvj2g7etzex7E-5MXI5m5pd1LfRx6sTzYXhd0rp9HDOt-0P9oP_b9ZinU=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">05:42</span>
+    <span class="author">@제트스파우스</span>
+    <span class="text-content">맛있구만</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/QVEVwxpfOejt5KOGZPEzHE8Bqrr-Hj70JNFpQ01LX9JQnVUPEQ6EgTP6sIqjfkUkZkPOkSgo=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">05:44</span>
+    <span class="author">@체포낙</span>
+    <span class="text-content">복창3 나오겠다 ㅋㅋ</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/Ba-D0fbSb-sbvAv7FSEbUc0hd7-PAvhaO_nufRVERjgx9vpzqjwZIFAUdGTIehWE83f6Zf0y=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">05:44</span>
+    <span class="author">@테일로</span>
+    <span class="text-content">ㅂㅂㅂ</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/14cGw_5G1XszXBU-1sGYa-ZhMmFhzgPvSV3hvWhrcQ1z3CrUD1fOSMAH-aMXP9JMGi1h4iESRA=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">05:47</span>
+    <span class="author">@Celltrion802</span>
+    <span class="text-content">통발이네</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/QVEVwxpfOejt5KOGZPEzHE8Bqrr-Hj70JNFpQ01LX9JQnVUPEQ6EgTP6sIqjfkUkZkPOkSgo=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">05:48</span>
+    <span class="author">@체포낙</span>
+    <span class="text-content">뭔 끝이여 ㅋㅋ</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/KjJVRJ0WKSHTSN8a1KeG-5NAFbTcazxfDHzME7OeABX3tK4RmJkpHT0RMj3eFFnwBTO9oYdU1A=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">05:49</span>
+    <span class="author">@Elmang_Light</span>
+    <span class="text-content">잘 봤습니다</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/ytc/AIdro_nLurlmfBbMPywCVBJf5vpyPEHlfhr6OXzXQHm3t540sS0=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">05:50</span>
+    <span class="author">@산야-R</span>
+    <span class="text-content"><img class="emoji" src="https://yt3.ggpht.com/KOxdr_z3A5h1Gb7kqnxqOCnbZrBmxI2B_tRQ453BhTWUhYAlpg5ZP8IKEBkcvRoY8grY91Q=w48-h48-c-k-nd" alt=":hand-pink-waving:" title=":hand-pink-waving:"><img class="emoji" src="https://yt3.ggpht.com/KOxdr_z3A5h1Gb7kqnxqOCnbZrBmxI2B_tRQ453BhTWUhYAlpg5ZP8IKEBkcvRoY8grY91Q=w48-h48-c-k-nd" alt=":hand-pink-waving:" title=":hand-pink-waving:"></span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/Os6e_-QYdawIkasOAYGFvVubVZoPQ1gfk3HcXOq9QdCDDRTKx0IuwNbNRNvyavcwKyOoHRyU=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">05:50</span>
+    <span class="author">@리자예</span>
+    <span class="text-content">왜 이거밖에 없음</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/oTzGuaZokaWvZ-LkcLttgtxsGix2P-91nywJF2RFnlZ3YNSSr4f5VSbiMr1W-TXYBPD1IkogZg=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">05:53</span>
+    <span class="author">@발라리안한모금</span>
+    <span class="text-content">ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ 통발이네</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/ICMnCu7c3UPf7RsTeHtBsSzOsiHpyDarfau3929gK9mXWc2yESG__QGwift0Y1vJc2ShwrO-97o=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">05:53</span>
+    <span class="author">@미라크르메이풀</span>
+    <span class="text-content">끝이라고?</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/38QzfjtBOW4dv4nPvj2g7etzex7E-5MXI5m5pd1LfRx6sTzYXhd0rp9HDOt-0P9oP_b9ZinU=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">05:55</span>
+    <span class="author">@제트스파우스</span>
+    <span class="text-content">이거보고 내가 제출한거 풀버전 올려야겠다</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/DrwVh7YGNr_UiCTs4CyXowSf9nxU6kmwwLXwy73lJhEr1W9_BZCgXnoU76c8Nldw4zoQ867Lvoc=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">05:55</span>
+    <span class="author">@편초자</span>
+    <span class="text-content">안믿음</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/qXXHwGgWBczOX8yeSdRkbT6edScNjewHYonDnGCf97hKjAAqyQsew5I4jo6Fj-eAM4cHv9lzqg=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">05:56</span>
+    <span class="author">@산토스도스</span>
+    <span class="text-content">테일로 복귀곡 ㅇㄷ?</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/JsmO1lH04zqHeKxASkWD6YaOKVugAIwqz9OYrYiFXYF-05A73X76P16cA-h3dCrUkFmP36q3ag=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">05:56</span>
+    <span class="author">@창팝용</span>
+    <span class="text-content"><img class="emoji" src="https://yt3.ggpht.com/KOxdr_z3A5h1Gb7kqnxqOCnbZrBmxI2B_tRQ453BhTWUhYAlpg5ZP8IKEBkcvRoY8grY91Q=w48-h48-c-k-nd" alt=":hand-pink-waving:" title=":hand-pink-waving:"><img class="emoji" src="https://yt3.ggpht.com/KOxdr_z3A5h1Gb7kqnxqOCnbZrBmxI2B_tRQ453BhTWUhYAlpg5ZP8IKEBkcvRoY8grY91Q=w48-h48-c-k-nd" alt=":hand-pink-waving:" title=":hand-pink-waving:"><img class="emoji" src="https://yt3.ggpht.com/KOxdr_z3A5h1Gb7kqnxqOCnbZrBmxI2B_tRQ453BhTWUhYAlpg5ZP8IKEBkcvRoY8grY91Q=w48-h48-c-k-nd" alt=":hand-pink-waving:" title=":hand-pink-waving:"></span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/06mhTXCdfW7yZfIAA9AdKtm53O3oPHtsQ3KWy4rJMtjm5Xkd9HXl-Xn7DbWSOo5geRrUWFyQ8w=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">05:56</span>
+    <span class="author">@Colrma</span>
+    <span class="text-content"><img class="emoji" src="https://yt3.ggpht.com/s3uOe4lUx3iPIt1h901SlMp_sKCTp3oOVj1JV8izBw_vDVLxFqk5dq-3NX-nK_gnUwVEXld3=w48-h48-c-k-nd" alt=":yougotthis:" title=":yougotthis:"></span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/ytc/AIdro_ntLLnhsaIcV5UPLGebSgBUUsebhLcEYno_1EeVTCZ6Kg=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">05:58</span>
+    <span class="author">@김태영-m7v</span>
+    <span class="text-content"><img class="emoji" src="https://yt3.ggpht.com/s3uOe4lUx3iPIt1h901SlMp_sKCTp3oOVj1JV8izBw_vDVLxFqk5dq-3NX-nK_gnUwVEXld3=w48-h48-c-k-nd" alt=":yougotthis:" title=":yougotthis:"></span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/QVEVwxpfOejt5KOGZPEzHE8Bqrr-Hj70JNFpQ01LX9JQnVUPEQ6EgTP6sIqjfkUkZkPOkSgo=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">05:58</span>
+    <span class="author">@체포낙</span>
+    <span class="text-content">공식이 뭘 ㅏㅇㄹ아</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/ytc/AIdro_nLurlmfBbMPywCVBJf5vpyPEHlfhr6OXzXQHm3t540sS0=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">05:59</span>
+    <span class="author">@산야-R</span>
+    <span class="text-content">쇼츠라 빠른가?</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/38QzfjtBOW4dv4nPvj2g7etzex7E-5MXI5m5pd1LfRx6sTzYXhd0rp9HDOt-0P9oP_b9ZinU=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">06:00</span>
+    <span class="author">@제트스파우스</span>
+    <span class="text-content">공시기뭐라라</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/JsmO1lH04zqHeKxASkWD6YaOKVugAIwqz9OYrYiFXYF-05A73X76P16cA-h3dCrUkFmP36q3ag=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">06:05</span>
+    <span class="author">@창팝용</span>
+    <span class="text-content"><img class="emoji" src="https://yt3.ggpht.com/s3uOe4lUx3iPIt1h901SlMp_sKCTp3oOVj1JV8izBw_vDVLxFqk5dq-3NX-nK_gnUwVEXld3=w48-h48-c-k-nd" alt=":yougotthis:" title=":yougotthis:"><img class="emoji" src="https://yt3.ggpht.com/s3uOe4lUx3iPIt1h901SlMp_sKCTp3oOVj1JV8izBw_vDVLxFqk5dq-3NX-nK_gnUwVEXld3=w48-h48-c-k-nd" alt=":yougotthis:" title=":yougotthis:"><img class="emoji" src="https://yt3.ggpht.com/s3uOe4lUx3iPIt1h901SlMp_sKCTp3oOVj1JV8izBw_vDVLxFqk5dq-3NX-nK_gnUwVEXld3=w48-h48-c-k-nd" alt=":yougotthis:" title=":yougotthis:"></span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/wige6O4edxqtO0S0dttP4Vx53js4jbCItiajBjNs8ciTJsgBMvCaO4Sc29xYJhjrA9ZjIcYHUd4=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">06:07</span>
+    <span class="author">@GLAnology</span>
+    <span class="text-content">얼탱 ㅋㅋ</span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/qXXHwGgWBczOX8yeSdRkbT6edScNjewHYonDnGCf97hKjAAqyQsew5I4jo6Fj-eAM4cHv9lzqg=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">06:09</span>
+    <span class="author">@산토스도스</span>
+    <span class="text-content"><img class="emoji" src="https://yt3.ggpht.com/oih9s26MOYPWC_uL6tgaeOlXSGBv8MMoDrWzBt-80nEiVSL9nClgnuzUAKqkU9_TWygF6CI=w48-h48-c-k-nd" alt=":face-red-droopy-eyes:" title=":face-red-droopy-eyes:"><img class="emoji" src="https://yt3.ggpht.com/oih9s26MOYPWC_uL6tgaeOlXSGBv8MMoDrWzBt-80nEiVSL9nClgnuzUAKqkU9_TWygF6CI=w48-h48-c-k-nd" alt=":face-red-droopy-eyes:" title=":face-red-droopy-eyes:"><img class="emoji" src="https://yt3.ggpht.com/oih9s26MOYPWC_uL6tgaeOlXSGBv8MMoDrWzBt-80nEiVSL9nClgnuzUAKqkU9_TWygF6CI=w48-h48-c-k-nd" alt=":face-red-droopy-eyes:" title=":face-red-droopy-eyes:"></span>
+  </div>
+</div>
+<div class="msg text">
+  <img class="avatar" src="https://yt4.ggpht.com/oTzGuaZokaWvZ-LkcLttgtxsGix2P-91nywJF2RFnlZ3YNSSr4f5VSbiMr1W-TXYBPD1IkogZg=s64-c-k-c0x00ffffff-no-rj" alt="">
+  <div class="bubble">
+    <span class="time">06:12</span>
+    <span class="author">@발라리안한모금</span>
+    <span class="text-content">통발임 ㅇㅇ</span>
+  </div>
+</div>
+
+</div>
+</body>
+</html>
